@@ -1,0 +1,138 @@
+.head_wrap{
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+
+    /*opacity: 0.5;*/
+}
+.head_display p{
+    width: 112%;
+    float: left;
+    margin-top: -57px;
+    margin-left: 169px;
+    font-size: 18px;
+    font-family: kaiti ;
+    color:black;
+    font-weight: 700;
+}
+.header1{
+    position: relative;
+}
+.head_display img{
+    width: 100%;
+    height: 55px;
+
+}
+.head_display img:hover{
+    box-shadow:5px 5px 10px gray;
+}
+ .head_nav{
+     cursor: pointer;
+     color: black;
+ }
+.header_box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+}
+.header_off{
+    display: none ;
+}
+.show{
+    background: #f9f9f9;
+    font-weight: 600;
+    font-family: 华文行书;
+}
+ .head_right{
+    display: none;
+}
+ /*.header-ul li{*/
+     /*float: right;*/
+     /*margin-right: ;*/
+ /*}*/
+.head_nav{
+    display: block ;
+    width: 15%;
+}
+.head_nav:hover{
+    background: whitesmoke;
+    font-weight: 600;
+    font-family: 华文行书;
+}
+
+
+
+@media (max-width:992px){
+    .head_nav{
+        font-size: 13px;
+    }
+}
+
+@media (max-width:768px) {
+    .head_display img{
+        display: none;
+    }
+    .header_box{
+        width: 100%;
+        /*z-index: 22;*/
+        /*background-color: #5e5e5e;*/
+        text-align: center;
+    }
+    .head_nav{
+        display: block;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        /*color: white ;*/
+        font-size: 25px;
+        font-family: 华文隶书;
+        background-color: #999999;
+        display: none;
+    }
+    .head_nav .head_font{
+        display: block;
+        width: 90%;
+        /*background-color: #1b6d85;*/
+    }
+     .head_right{
+        /*background-color: red;*/
+        width: 10%;
+        height: 60px;
+        display: block;
+        position: absolute;
+        right: 0;
+        line-height: 60px;
+        top: 0;
+        z-index: 3;
+    }
+     .header_off{
+         width: 100%;
+         height: 60px;
+         line-height: 60px;
+         background-color: #adadad;
+         color: red;
+         font-size: 25px;
+         font-family: 华文隶书;
+         cursor: pointer;
+     }
+    .show{
+        background-color: #86836e;
+        color: blue;
+        display: block;
+    }
+    /*.head_nav:hover span{*/
+        /*display: block;*/
+    /*}*/
+    .head_nav:hover{
+        background-color: #86836e;
+        color: blue;
+        font-size: 25px;
+        font-family: 华文隶书;
+    }
+
+}

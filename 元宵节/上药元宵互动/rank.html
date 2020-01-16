@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+		<title></title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+				-webkit-tap-highlight-color: transparent;
+			}
+			
+			html,
+			body {
+				height: 100%;
+				overflow: hidden;
+			}
+			
+			.ranking {
+				height: 100%;
+				background: #fff;
+			}
+			
+			.top {
+				font-size: 0;
+			}
+			
+			.top img {
+				width: 100%;
+				height: 37.8666vw;
+			}
+			
+			.middle {
+				height: calc(100vh - 51.7332vw);
+			}
+			
+			.middle ul {
+				height: 100%;
+				padding: 2vw 0;
+				box-sizing: border-box;
+				overflow-y: auto;
+				overflow-x: hidden;
+				-webkit-overflow-scrolling: touch;
+			}
+			
+			.middle ul li {
+				height: 13.8666vw;
+				padding: 0 4.4vw;
+			}
+			
+			.middle ul .item {
+				height: 100%;
+				display: flex;
+				align-items: center;
+				font-size: 4vw;
+				color: #FFFFFF;
+				border-bottom: 1px solid #e4e4e4;
+				box-sizing: border-box;
+			}
+			
+			.bottom {
+				height: 13.8666vw;
+				display: flex;
+				align-items: center;
+				padding: 0 4.4vw;
+				background: #e50150;
+				color: #FFFFFF;
+				font-size: 4vw;
+			}
+			
+			li .nickName {
+				color: #666666;
+			}
+			
+			li .time {
+				color: #999999;
+			}
+			
+			li .time span {
+				color: #00b775;
+			}
+			
+			li .score {
+				color: #01b574;
+			}
+			
+			li .rank {
+				color: #666666;
+			}
+			
+			.rank {
+				width: 7vw;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 14px;
+			}
+			
+			.avatar {
+				width: 8.666vw;
+				height: 8.666vw;
+				border-radius: 50%;
+				margin: 0 3.6vw;
+			}
+			
+			.nickName {
+				flex: 1;
+				padding-right: 2vw;
+			}
+			
+			.time {
+				width: 20vw;
+				text-align: center;
+				line-height: 5vw;
+			}
+			
+			.score {
+				text-align: center;
+				width: 20vw;
+			}
+			
+			.rank img {
+				width: 5vw;
+			}
+			
+			.middle .bgcolor {
+				background: #fff45c;
+			}
+			.middle .bgcolor .item{
+				border-bottom: 1px solid #FFFFFF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="ranking">
+			<div class="top">
+				<img src="img/rankTop.jpg" />
+			</div>
+			<div class="middle">
+				<ul class="transition">
+					<li class="bgcolor">
+						<div class="item">
+							<p class="rank"><img src="img/rank1.png" /></p>
+							<img src="img/close.png" class="avatar" />
+							<p class="nickName">紫明宝</p>
+							<p class="score">100分</p>
+							<p class="time">1月12日 <span>12:09:10</span></p>
+						</div>
+					</li>
+					<li class="bgcolor">
+						<div class="item">
+							<p class="rank"><img src="img/rank2.png" /></p>
+							<img src="img/close.png" class="avatar" />
+							<p class="nickName">紫明宝</p>
+							<p class="score">100分</p>
+							<p class="time">1月12日 <span>12:09:10</span></p>
+						</div>
+					</li>
+					<li class="bgcolor">
+						<div class="item">
+							<p class="rank"><img src="img/rank3.png" /></p>
+							<img src="img/close.png" class="avatar" />
+							<p class="nickName">紫明宝</p>
+							<p class="score">100分</p>
+							<p class="time">1月12日 <span>12:09:10</span></p>
+						</div>
+					</li>
+					<li class="bgcolor">
+						<div class="item">
+							<p class="rank">4</p>
+							<img src="img/close.png" class="avatar" />
+							<p class="nickName">紫明宝</p>
+							<p class="score">100分</p>
+							<p class="time">1月12日 <span>12:09:10</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="item">
+							<p class="rank">5</p>
+							<img src="img/close.png" class="avatar" />
+							<p class="nickName">紫明宝</p>
+							<p class="score">100分</p>
+							<p class="time">1月12日 <span>12:09:10</span></p>
+						</div>
+					</li>
+					<li>
+						<div class="item">
+							<p class="rank">5</p>
+							<img src="img/close.png" class="avatar" />
+							<p class="nickName">紫明宝</p>
+							<p class="score">100分</p>
+							<p class="time">1月12日 <span>12:09:10</span></p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom">
+				<span class="rank">111</span>
+				<img src="img/close.png" class="avatar" />
+				<p class="nickName">紫明宝</p>
+				<p class="score">100分</p>
+				<p class="time">1月12日 12:09:10</p>
+			</div>
+		</div>
+	</body>
+
+</html>

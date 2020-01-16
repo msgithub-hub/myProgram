@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.all {
+    height: 100%;
+    width: 100%;
+    background: url(/static/demov2/xinyi0125/image/pk/bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+
+.content {
+    width: 60%;
+    height: 100%;
+    padding: 10vh 0;
+    box-sizing: border-box;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 13vh;
+}
+
+.top>p {
+    flex: 1;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.left {
+    color: red;
+    flex: 1;
+    text-align: center;
+}
+
+.right {
+    color: blue;
+    flex: 1;
+    text-align: center;
+}
+
+.middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+}
+
+.middle p {
+    font-size: 35px;
+}
+
+.tu {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 14vh 0;
+}
+
+.tu .bi {
+    width: 100%;
+    display: flex;
+}
+
+.tu>div {
+    height: 100%;
+}
+
+.tu .left {
+    flex: initial;
+    width: 50%;
+    background: #e10606;
+}
+
+.tu .right {
+    background: #002ba5;
+}
+
+.tu .light {
+    width: 40%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+}
+
+.tu .light .power {
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .1s linear;
+    display: none;
+}
+
+.tu .light img {
+    width: 100%;
+}
+
+.bottom {
+    height: 26vh;
+}
+
+.btn {
+    position: absolute;
+    width: 14%;
+    bottom: 5%;
+    height: 5vh;
+    right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn p {
+    flex: 1;
+    text-align: center;
+    border-radius: 5px;
+    color: #fff;
+    line-height: 40px;
+    letter-spacing: 2px;
+    padding-left: 2px;
+    font-size: 20px;
+}
+
+.start {
+    background: green;
+    margin-right: 4%;
+    cursor: pointer;
+}
+
+.end {
+    background: red;
+    cursor: pointer;
+}
+
+.logo {
+    width: 18vw;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+
+.all-left {
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10vw 5%;
+    display: flex;
+    align-items: center;
+    margin-right: 2.5%;
+}
+
+.code {
+    width: 100%;
+    height: 20vw;
+}
+.code img{
+	width: 100%;
+	box-sizing: border-box;
+	border: 10px solid #fff;
+}
+.all-left-content {
+	width: 100%;
+    text-align: center;
+}
+
+.all-left-content .time {
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-top: 2vh;
+}

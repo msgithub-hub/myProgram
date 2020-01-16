@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>article</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/common.css">
+    <script src="js/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+    <script type="text/javascript" src="js/move.js"></script>
+    <script type="text/javascript" src="js/article.js"></script>
+    <script type="text/javascript" src="js/articleData.js"></script>
+    <!--引入 谷歌的字体库-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+          rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic"
+          rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="article_wrap">
+    <div class="container">
+        <h3 class="art_title">建筑风格</h3>
+        <p class="art_title" style="margin-bottom: 3em">Architectural style</p>
+        <div class="row">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12  art_left">
+                <!--标题-->
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h3  id="typeTitle">地中海建筑风格</h3>
+                        <p id="typeEntitle">Mediterranean Style</p>
+                        <p class="long_line"></p>
+                        <p class="author"><span id="updateTime" >2017-07-19</span> <span id="author">管理员</span></p>
+                    </div>
+                </div>
+                <!--图片-->
+                <div class="row">
+                    <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <img id="cover" src="images/manner_img1.jpg" class="img-responsive article_pic">
+                    </div>
+                </div>
+                <!--内容-->
+                <div class="row">
+                    <div  class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <p class="content_text" id="content">
+                            建筑风格:简单、圆润的线条,省略繁复的雕琢和装饰，地中海建筑的线条简单且修边浑圆，给人感觉格外返璞归真、与众不同;
+                            色彩的组合与碰撞,西班牙蔚蓝色的海岸与白色沙滩，南意大利金黄的向日葵花田，法国南部蓝紫色薰衣草田，希腊碧海蓝天下的白色村庄，
+                            还有北非沙漠及岩石的红褐和土黄，在地中海充足的光照下，简单却明亮、大胆、丰厚，呈现出色彩最绚烂的一面，也构筑了地中海风格中最典型的三种色彩搭配：蓝与白、金黄与蓝紫、土黄与红褐;
+                            门廊、圆拱和镂空,长长的廊道，延伸至尽头然后垂直拐弯；半圆形高大的拱门，或数个连接或垂直交接；墙面通过穿凿或半穿凿形成镂空的景致。众多的回廊、穿堂、过道，一方面增加海景欣赏点的长度，
+                            另一方面利用风道的原理增加对流，形成穿堂风这样的所谓被动式的降温效果。
+                        </p>
+                    </div>
+                </div>
+                <!--滚动-->
+                <div class="row">
+                    <div class="scroll_wrap col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="scroll_box">
+                    <img src="images/manner1.jpg" class="img-responsive ">
+                            <img src="images/manner3.jpg" class="img-responsive ">
+                    <img src="images/manner2.jpg" class="img-responsive ">
+                    <img src="images/manner4.jpg" class="img-responsive ">
+                    <img src="images/manner5.jpg" class="img-responsive ">
+                    <img src="images/manner6.jpg" class="img-responsive ">
+                        </div>
+                    </div>
+                </div>
+           </div>
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12 art_right">
+            <ul class="article_right">
+                <li><h4 onclick="javascript:window.open('article.html?type=Mediterranean')">地中海建筑风格</h4>
+                    <p class="date">发布日期：2017-07-01</p>
+                    <p class="line"></p>
+                </li>
+                <li><h4 onclick="javascript:window.open('article.html?type=Italian')" >意大利建筑风格</h4>
+                    <p class="date">发布日期：2017-07-01</p>
+                    <p class="line"></p>
+                </li>
+                <li><h4 onclick="javascript:window.open('article.html?type=French')">法式建筑风格</h4>
+                    <p class="date">发布日期：2017-07-01</p>
+                    <p class="line"></p>
+                </li>
+                <li><h4 onclick="javascript:window.open('article.html?type=Bristish')" >英式建筑风格</h4>
+                    <p class="date">发布日期：2017-07-01</p>
+                    <p class="line"></p>
+                </li>
+                <li><h4 onclick="javascript:window.open('article.html?type=German')" >德国建筑风格</h4>
+                    <p class="date">发布日期：2017-07-01</p>
+                    <p class="line"></p>
+                </li>
+                <li><h4 onclick="javascript:window.open('article.html?type=North')">北美建筑风格</h4>
+                    <p class="date">发布日期：2017-07-01</p>
+                    <p class="line"></p>
+                </li>
+                <li><h4 onclick="javascript:window.open('article.html?type=Neociassicism')">新古典主义建筑风格</h4>
+                    <p class="date">发布日期：2017-07-01</p>
+                    <p class="line"></p>
+                </li>
+                <li><h4 onclick="javascript:window.open('article.html?type=Chinese')">新中式建筑风格</h4>
+                    <p class="date">发布日期：2017-07-01</p>
+                    <p class="line"></p>
+                </li>
+                <li><h4 onclick="javascript:window.open('article.html?type=Medernism')">现代主义建筑风格</h4>
+                    <p class="date">发布日期：2017-07-01</p>
+                    <p class="line"></p>
+                </li>
+                <li><h4 onclick="javascript:window.open('article.html?type=Comprehensive')" >综合类建筑风格</h4>
+                    <p class="date">发布日期：2017-07-01</p>
+                    <p class="line"></p>
+                </li>
+            </ul>
+        </div>
+            </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.contact-wrap {
+    width: 80%;
+    /*background: rgba(230, 38, 55, 0.76);*/
+    margin: 0 auto;
+}
+
+.contact-wrap-son h2 {
+    color: green;
+}
+
+#contact-wrap-son1-ditu {
+    width: 94.7%;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.contact-wrap-son2-zuo h3{
+    color: green;
+    font-size: 32px;
+}
+.contact-wrap-son2-zuo p{
+    color: #94a5bf;
+}
+.contact-wrap-son2-you input{
+    width: 187px;
+    height: 50px;
+}
+.contact-wrap-son2-you textarea{
+    height: 210px;
+    width: 88%;
+    float:left;
+    margin: 8px -1px;
+    /*border-left: none;*/
+}
+.contact-wrap-son2-you  h4{
+    color: white;
+    width: 150px;
+    height: 50px;
+    background: rgba(79, 230, 13, 0.76);
+    margin: 240px 1px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}

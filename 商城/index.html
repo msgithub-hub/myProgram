@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--<meta content="商城" http-equiv="keywords">-->
+    <!--<meta name="description" content="商城,购物">-->
+    <!--<meta name="format-detection" content="telephone=no">&lt;!&ndash; 禁止IPHONE识别手机号码 &ndash;&gt;-->
+    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+    <title>贵阳花溪盛千辉便利店</title>
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+
+    <!-- public_css -->
+    <link rel="stylesheet" type="text/css" href="css/public/public_lib.css">
+
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+
+</head>
+<body>
+
+<!--头部-->
+<header class="module-layer">
+    <div class="module-layer-content">
+        <div class="module-layer-bg"></div>
+        <div class="search-box-cover"></div>
+        <p class="layer-logo"><img src="images/logo.png"></p>
+        <h1 class="layer-head-name">
+            <div class="pr search-box">
+                <img class="shop-search" src="images/icon_search.png"/>
+                <input id="shop-input" type="text" placeholder="零食" value=""/>
+            </div>
+        </h1>
+        <p class="layer-login"><a href="login.html">登录</a></p>
+    </div>
+</header>
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+        var $body = $('body');
+        var setCoverOpacity = function () {
+            $body.find('.search-box-cover').css({
+                opacity: ((($body.scrollTop() / 150) > 0.9) ? 0.9 : ($body.scrollTop() / 150))
+            })
+        }
+        //初始化设置背景透明度
+        setCoverOpacity();
+        //监听滚动条事件，改变透明度
+        $(window).scroll(function () {
+            setCoverOpacity();
+        });
+    });
+</script>
+
+<div class="module-content">
+    <!--banner图-->
+    <div class="swiper-container banner">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <img src="images/banner.jpg">
+            </li>
+            <li class="swiper-slide">
+                <img src="images/banner01.jpg">
+            </li>
+            <li class="swiper-slide">
+                <img src="images/banner.jpg">
+            </li>
+            <li class="swiper-slide">
+                <img src="images/banner01.jpg">
+            </li>
+        </ul>
+        <div class="swiper-pagination sp01"></div>
+        <script>
+            var swiper = new Swiper('.banner', {
+                pagination: '.sp01',
+                paginationClickable: true,
+                autoplay: "3000",
+                loop: "ture",
+                speed: 500,
+                autoplayDisableOnInteraction: false,
+            });
+        </script>
+    </div>
+
+    <!-- 图标导航icon -->
+    <div class="swiper-container nav_iconbox">
+        <div class="swiper-wrapper">
+            <!-- 每个ul有8个li，不能多于8个 -->
+            <ul class="swiper-slide">
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon01.png">
+                        <span>饮料饮品</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon02.png">
+                        <span>休闲零食</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon03.png">
+                        <span>新鲜水果</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon04.png">
+                        <span>散称零食</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon05.png">
+                        <span>方便面</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon06.png">
+                        <span>酒水专区</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon07.png">
+                        <span>冲调食品</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="exchange.html">
+                        <img src="images/nav_icon08.png">
+                        <span>牛奶</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="swiper-slide">
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon01.png">
+                        <span>茗茶</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon01.png">
+                        <span>调味食品</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon01.png">
+                        <span>南北干货</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon01.png">
+                        <span>文体用品</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon01.png">
+                        <span>办公用品</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon01.png">
+                        <span>生活百货</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon01.png">
+                        <span>生活用纸</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon01.png">
+                        <span>女神用品</span>
+                    </a>
+                </li>
+            </ul>
+            <ul class="swiper-slide">
+                <li>
+                    <a href="category.html">
+                        <img src="images/nav_icon01.png">
+                        <span>护肤洗涤</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="swiper-pagination icon01"></div>
+        <script>
+            var swiper = new Swiper('.nav_iconbox', {
+                pagination: '.icon01',
+                paginationClickable: true,
+                speed: 500,
+                autoplayDisableOnInteraction: false,
+            });
+        </script>
+    </div>
+
+    <!-- 商城公告和商家入驻口 -->
+    <div class="news_sj_dxs_box bgwh mb6">
+        <div class="scrollnews">
+            <span><a href="newslist.html"><img src="images/news_tit.png"></a></span>
+            <ul>
+                <li><a href="news_xq.html">热烈祝贺颜文明体育贵阳市枣山路店盛大开业</a></li>
+                <li><a href="news_xq.html">认真学习十九大精神，争取贯彻落实习总书记讲话</a></li>
+                <li><a href="news_xq.html">董事长在员工大会上发表演讲！</a></li>
+            </ul>
+            <script type="text/javascript">
+                $(document).ready(function () {
+                    //滚动文字
+                    function runtxt() {
+                        $(".scrollnews ul").animate({marginTop: "-.4rem"}, 300,
+                            function () {
+                                $(".scrollnews ul li:last").after($(".scrollnews ul li:first"))
+                                $(".scrollnews ul").css("margin-top", 0)
+                            }
+                        )
+                    }
+
+                    $(".scrollnews ul li a").mouseenter(
+                        function () {
+                            clearInterval(timer)
+                        }
+                    )
+                    $(".scrollnews ul li a").mouseleave(
+                        function () {
+                            timer = setInterval(runtxt, 4000)
+                        }
+                    )
+                    timer = setInterval(runtxt, 4000)
+                })
+            </script>
+        </div>
+        <div class="sj_dxs_box">
+            <h2>
+                <a href="apply_index.html">
+                    <img src="images/bg_sj.jpg">
+                </a>
+            </h2>
+        </div>
+    </div>
+
+    <!-- 热销品类 -->
+    <div class="yh_select bgwh mb6">
+        <div class="index_title rel">
+            <h1>
+                <a>热销品类</a>
+            </h1>
+            <i></i>
+        </div>
+        <div class="yh_goodsbox fix">
+            <div class="l">
+                <div class="swiper-container yh_wrapper">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="images/pic01.jpg">
+                                <p>10支纳米牙刷软毛成人家用竹炭抑菌款</p>
+                                <span><!-- <em>￥699.00</em> --><i>￥2 9.00</i></span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="images/pic03.jpg">
+                                <p>新品】康师傅金汤虾球面，营养健康新体验.</p>
+                                <span><!-- <em>￥5.00</em> --><i>￥5.00</i></span>
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="#">
+                                <img src="images/pic08.jpg">
+                                <p>RIO锐澳鸡尾酒套装预调酒果酒洋酒经典275ml*24瓶整箱正品1517104正品</p>
+                                <span><!-- <em>￥399.00</em> --><i>￥199.00</i></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="swiper-pagination sp02"></div>
+                    <script>
+                        var swiper = new Swiper('.yh_wrapper', {
+                            pagination: '.sp02',
+                            paginationClickable: true,
+                            autoplay: "3000",
+                            loop: "ture",
+                            speed: 500,
+                            autoplayDisableOnInteraction: false,
+                        });
+                    </script>
+                </div>
+            </div>
+
+            <div class="two r">
+                <h2>
+                    <a href="search_gzttc.html"><img src="images/index_ad_pic(2).jpg"></a>
+                </h2>
+                <h3>
+                    <a href="search_gzttc.html"><img src="images/index_ad_pic(3).jpg"></a>
+                </h3>
+                <h4>
+                    <a href="search_gzttc.html"><img src="images/index_ad_pic(6).jpg"></a>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- 广告条 -->
+    <div class="ad_picbox">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <a href="#"><img src="images/ad_pic01.jpg"></a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#"><img src="images/ad_pic02.jpg"></a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#"><img src="images/ad_pic03.jpg"></a>
+            </li>
+        </ul>
+        <script>
+            var swiper = new Swiper('.ad_picbox', {
+                autoplay: "4000",
+                effect: "fade",
+                loop: "ture",
+                speed: 700,
+                autoplayDisableOnInteraction: false,
+            });
+        </script>
+    </div>
+
+    <!-- 新品推荐 -->
+    <div class="new_goods bgwh mb6">
+        <div class="index_title rel">
+            <h1>
+                <a>新品推荐</a>
+            </h1>
+            <i></i>
+        </div>
+        <div class="nine_goods_pic">
+            <ul>
+                <li>
+                    <a href="goods.html">
+                        <img src="images/pic01.jpg">
+                        <p>10支纳米牙刷软毛成人家用竹炭抑菌款</p>
+                        <span>￥29.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="goods.html">
+                        <img src="images/pic02.jpg">
+                        <p>日本进口食品丸京红豆铜锣烧310g蛋糕面包早餐网红零食品小吃动网球鞋</p>
+                        <span>￥299.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="goods.html">
+                        <img src="images/pic03.jpg">
+                        <p>康师傅红烧牛肉面康师傅红烧牛肉面康师傅红烧牛肉面</p>
+                        <span>￥49.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="goods.html">
+                        <img src="images/pic08.jpg">
+                        <p>RIO锐澳鸡尾酒套装预调酒果酒洋酒经典275ml*24瓶整箱正品1517104正品</p>
+                        <span>￥399.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="goods.html">
+                        <img src="images/pic05.jpg">
+                        <p>innisfree/悦诗风吟绿茶精萃保湿洁面乳</p>
+                        <span>￥299.00</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="goods.html">
+                        <img src="images/pic06.jpg">
+                        <p>化妆品收纳盒桌面抽屉式办公室文具文件架办公桌用品多功能置物架</p>
+                        <span>￥199.00</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="btn_link">
+                <a href="category.html">更多新品></a>
+            </div>
+        </div>
+        <!-- 设置图片宽高相等，保持布局统一性 -->
+        <script type="text/javascript">
+            $(function () {
+                var w = $(".nine_goods_pic ul li img").width()
+                $(".nine_goods_pic ul li img").css("height", w)
+
+            })
+        </script>
+    </div>
+
+
+    <!-- 积分专区 -->
+    <div class="hot_goods good_stores bgwh mb6">
+        <div class="index_title rel">
+            <h1>
+                <a>积分专区</a>
+            </h1>
+            <i></i>
+        </div>
+    </div>
+    <!-- 积分专区 -->
+    <div class="hot_goods pj_goods_box bgwh mb6">
+        <div class="hot_goods_pic pj_goods">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="goods.html">
+                        <img src="images/pic07.jpg">
+                        <p>黑人牙膏超白茶家庭套装14支美白去黄去1517104正品</p>
+                        <span>4200.00分</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="goods.html">
+                        <img src="images/pic04.jpg">
+                        <p>千业吐司面包1Kg半切片三明治早餐蛋糕炼奶乳</p>
+                        <span>4200.00分</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="goods.html">
+                        <img src="images/pic01.jpg">
+                        <p>耐克NIKE体育用品男帽女帽 2018新款网球</p>
+                        <span>4200.00分</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="goods.html">
+                        <img src="images/pic07.jpg">
+                        <p>黑人牙膏超白茶家庭套装14支美白去黄去1517104正品</p>
+                        <span>4200.00分</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="goods.html">
+                        <img src="images/pic04.jpg">
+                        <p>耐克NIKE体育用品男帽女帽 2018新款网球</p>
+                        <span>4200.00分</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="goods.html">
+                        <img src="images/pic05.jpg">
+                        <p>innisfree/悦诗风吟绿茶精萃保湿洁面乳</p>
+                        <span>4200.00分</span>
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="goods.html">
+                        <img src="images/pic07.jpg">
+                        <p>黑人牙膏超白茶家庭套装14支美白去黄去1517104正品</p>
+                        <span>4200.00分</span>
+                    </a>
+                </li>
+            </ul>
+            <!-- 设置图片宽高相等，保持布局统一性 -->
+            <script type="text/javascript">
+                $(function () {
+                    var w = $(".pj_goods ul li img").width()
+                    $(".pj_goods ul li img").css("height", w)
+
+                })
+            </script>
+        </div>
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper('.pj_goods', {
+                slidesPerView: 3.5,
+                paginationClickable: true,
+                spaceBetween: 10,
+                autoplay: 2500,
+                autoplayDisableOnInteraction: false,
+            });
+        </script>
+    </div>
+
+
+    <!-- 广告条 -->
+    <div class="ad_picbox ad_picbox02">
+        <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+                <a href="#"><img src="images/ad_pic01.jpg"></a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#"><img src="images/ad_pic02.jpg"></a>
+            </li>
+            <li class="swiper-slide">
+                <a href="#"><img src="images/ad_pic03.jpg"></a>
+            </li>
+        </ul>
+        <script>
+            var swiper = new Swiper('.ad_picbox02', {
+                autoplay: "4000",
+                effect: "fade",
+                loop: "ture",
+                speed: 700,
+                autoplayDisableOnInteraction: false,
+            });
+        </script>
+    </div>
+
+    <!-- 酒水专区 · 饮料专区 · 牛奶 -->
+    <div class="sy_goods_box">
+        <div class="swiper-container goods_box01 bgwh mb6">
+            <!-- 栏目 栏目 -->
+            <div class="sy_my_pagetion my_page01"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide nine_goods_pic">
+                    <ul>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic01.jpg">
+                                <p>10支纳米牙刷软毛成人家用竹炭抑菌款</p>
+                                <span>￥29.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic02.jpg">
+                                <p>颜文明专业网鞋</p>
+                                <span>￥299.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic05.jpg">
+                                <p>innisfree/悦诗风吟绿茶精萃保湿洁面乳</p>
+                                <span>￥499.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic08.jpg">
+                                <p>RIO锐澳鸡尾酒套装预调酒果酒洋酒经典275ml*24瓶整箱正品1517104正品</p>
+                                <span>￥399.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic01.jpg">
+                                <p>10支纳米牙刷软毛成人家用竹炭抑菌款</p>
+                                <span>￥29.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic02.jpg">
+                                <p>日本进口食品丸京红豆铜锣烧310g蛋糕面包早餐网红零食品小吃动网球鞋</p>
+                                <span>￥199.00</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_link">
+                        <a href="category.html">更多经典男鞋></a>
+                    </div>
+                </div>
+                <div class="swiper-slide nine_goods_pic">
+                    <ul>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic01.jpg">
+                                <p>10支纳米牙刷软毛成人家用竹炭抑菌款</p>
+                                <span>￥29.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic02.jpg">
+                                <p>日本进口食品丸京红豆铜锣烧310g蛋糕面包早餐网红零食品小吃动网球鞋</p>
+                                <span>￥299.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic03.jpg">
+                                <p>康师傅红烧牛肉面康师傅红烧牛肉面</p>
+                                <span>￥9.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic08.jpg">
+                                <p>RIO锐澳鸡尾酒套装预调酒果酒洋酒经典275ml*24瓶整箱正品1517104正品</p>
+                                <span>￥399.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic05.jpg">
+                                <p>innisfree/悦诗风吟绿茶精萃保湿洁面乳</p>
+                                <span>￥299.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic06.jpg">
+                                <p>化妆品收纳盒桌面抽屉式办公室文具文件架办公桌用品多功能置物架</p>
+                                <span>￥199.00</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_link">
+                        <a href="category.html">更多经典女鞋></a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide nine_goods_pic">
+                    <ul>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic01.jpg">
+                                <p>10支纳米牙刷软毛成人家用竹炭抑菌款</p>
+                                <span>￥29.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic02.jpg">
+                                <p>颜文明专业网鞋</p>
+                                <span>￥299.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic05.jpg">
+                                <p>innisfree/悦诗风吟绿茶精萃保湿洁面乳</p>
+                                <span>￥499.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic08.jpg">
+                                <p>RIO锐澳鸡尾酒套装预调酒果酒洋酒经典275ml*24瓶整箱正品1517104正品</p>
+                                <span>￥399.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic01.jpg">
+                                <p>10支纳米牙刷软毛成人家用竹炭抑菌款</p>
+                                <span>￥29.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic02.jpg">
+                                <p>日本进口食品丸京红豆铜锣烧310g蛋糕面包早餐网红零食品小吃动网球鞋</p>
+                                <span>￥199.00</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_link">
+                        <a href="category.html">更多经典男鞋></a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <script>
+            var swiper = new Swiper('.goods_box01', {
+                autoHeight: true, //enable auto height
+                pagination: '.my_page01',
+                paginationClickable: true,
+                paginationBulletRender: function (swiper, index, className) {
+                    switch (index) {
+                        case 0:
+                            name = '酒水专区';
+                            break;
+                        case 1:
+                            name = '饮料专区';
+                            break;
+                        case 2:
+                            name = '牛奶';
+                            break;
+                        default:
+                            name = '';
+                    }
+                    return '<a class="' + className + '">' + name + '</a>';
+                }
+            });
+        </script>
+    </div>
+
+    <!-- 休闲零食 -->
+    <div class="sy_goods_box">
+        <div class="swiper-container goods_box02 bgwh mb6">
+            <!-- 栏目 栏目 -->
+            <div class="sy_my_pagetion my_page02"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide nine_goods_pic">
+                    <ul>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic06.jpg">
+                                <p>化妆品收纳盒桌面抽屉式办公室文具文件架办公桌用品多功能置物架</p>
+                                <span>￥699.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic02.jpg">
+                                <p>日本进口食品丸京红豆铜锣烧310g蛋糕面包早餐网红零食品小吃动网球鞋</p>
+                                <span>￥299.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic05.jpg">
+                                <p>innisfree/悦诗风吟绿茶精萃保湿洁面乳</p>
+                                <span>￥499.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic03.jpg">
+                                <p>康师傅红烧牛肉面康师傅红烧牛肉面</p>
+                                <span>￥9.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic01.jpg">
+                                <p>10支纳米牙刷软毛成人家用竹炭抑菌款</p>
+                                <span>￥29.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic02.jpg">
+                                <p>日本进口食品丸京红豆铜锣烧310g蛋糕面包早餐网红零食品小吃动网球鞋</p>
+                                <span>￥199.00</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_link">
+                        <a href="category.html">更多精品男装></a>
+                    </div>
+                </div>
+                <div class="swiper-slide nine_goods_pic">
+                    <ul>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic01.jpg">
+                                <p>10支纳米牙刷软毛成人家用竹炭抑菌款</p>
+                                <span>￥29.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic02.jpg">
+                                <p>颜文明专业网鞋</p>
+                                <span>￥299.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic03.jpg">
+                                <p>康师傅红烧牛肉面康师傅红烧牛肉面</p>
+                                <span>￥9.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic08.jpg">
+                                <p>RIO锐澳鸡尾酒套装预调酒果酒洋酒经典275ml*24瓶整箱正品1517104正品</p>
+                                <span>￥399.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic05.jpg">
+                                <p>innisfree/悦诗风吟绿茶精萃保湿洁面乳</p>
+                                <span>￥299.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic06.jpg">
+                                <p>化妆品收纳盒桌面抽屉式办公室文具文件架办公桌用品多功能置物架</p>
+                                <span>￥199.00</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_link">
+                        <a href="category.html">更多精品女装></a>
+                    </div>
+                </div>
+                <div class="swiper-slide nine_goods_pic">
+                    <ul>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic01.jpg">
+                                <p>10支纳米牙刷软毛成人家用竹炭抑菌款</p>
+                                <span>￥29.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic02.jpg">
+                                <p>颜文明专业网鞋</p>
+                                <span>￥299.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic03.jpg">
+                                <p>康师傅红烧牛肉面康师傅红烧牛肉面</p>
+                                <span>￥9.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic08.jpg">
+                                <p>RIO锐澳鸡尾酒套装预调酒果酒洋酒经典275ml*24瓶整箱正品1517104正品</p>
+                                <span>￥399.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic05.jpg">
+                                <p>innisfree/悦诗风吟绿茶精萃保湿洁面乳</p>
+                                <span>￥299.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic06.jpg">
+                                <p>化妆品收纳盒桌面抽屉式办公室文具文件架办公桌用品多功能置物架</p>
+                                <span>￥199.00</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_link">
+                        <a href="category.html">更多精品女装></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            var swiper = new Swiper('.goods_box02', {
+                autoHeight: true, //enable auto height
+                pagination: '.my_page02',
+                paginationClickable: true,
+                paginationBulletRender: function (swiper, index, className) {
+                    switch (index) {
+                        case 0:
+                            name = '休闲零食';
+                            break;
+                        case 1:
+                            name = '新鲜水果';
+                            break;
+                        case 2:
+                            name = '散装零食';
+                            break;
+                        default:
+                            name = '';
+                    }
+                    return '<a class="' + className + '">' + name + '</a>';
+                }
+            });
+        </script>
+    </div>
+
+    <!-- 运动鞋系列 -->
+    <div class="sy_goods_box">
+        <div class="swiper-container goods_box03 bgwh mb6">
+            <!-- 栏目 栏目 -->
+            <div class="sy_my_pagetion my_page03"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide nine_goods_pic">
+                    <ul>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic01.jpg">
+                                <p>颜文明专业网鞋复古休闲运动鞋</p>
+                                <span>￥699.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic02.jpg">
+                                <p>日本进口食品丸京红豆铜锣烧310g蛋糕面包早餐网红零食品小吃动网球鞋</p>
+                                <span>￥59.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic05.jpg">
+                                <p>innisfree/悦诗风吟绿茶精萃保湿洁面乳</p>
+                                <span>￥499.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic08.jpg">
+                                <p>RIO锐澳鸡尾酒套装预调酒果酒洋酒经典275ml*24瓶整箱正品1517104正品</p>
+                                <span>￥399.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic01.jpg">
+                                <p>颜文明专业网鞋复古经典休闲运动鞋</p>
+                                <span>￥299.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic02.jpg">
+                                <p>日本进口食品丸京红豆铜锣烧310g蛋糕面包早餐网红零食品小吃动网球鞋</p>
+                                <span>￥59.00</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_link">
+                        <a href="category.html">更多运动鞋系列></a>
+                    </div>
+                </div>
+                <div class="swiper-slide nine_goods_pic">
+                    <ul>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic01.jpg">
+                                <p>颜文明专业网鞋复古休闲运动鞋</p>
+                                <span>￥699.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic04.jpg">
+                                <p>千业吐司面包1Kg半切片三明治早餐蛋糕炼奶乳</p>
+                                <span>￥299.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic03.jpg">
+                                <p>康师傅红烧牛肉面康师傅红烧牛肉面</p>
+                                <span>￥9.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic08.jpg">
+                                <p>RIO锐澳鸡尾酒套装预调酒果酒洋酒经典275ml*24瓶整箱正品1517104正品</p>
+                                <span>￥399.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic05.jpg">
+                                <p>innisfree/悦诗风吟绿茶精萃保湿洁面乳</p>
+                                <span>￥299.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic06.jpg">
+                                <p>化妆品收纳盒桌面抽屉式办公室文具文件架办公桌用品多功能置物架</p>
+                                <span>￥199.00</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_link">
+                        <a href="category.html">更多体育用品></a>
+                    </div>
+                </div>
+                <div class="swiper-slide nine_goods_pic">
+                    <ul>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic04.jpg">
+                                <p>千业吐司面包1Kg半切片三明治早餐蛋糕炼奶乳</p>
+                                <span>￥699.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic02.jpg">
+                                <p>日本进口食品丸京红豆铜锣烧310g蛋糕面包早餐网红零食品小吃动网球鞋</p>
+                                <span>￥99.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic03.jpg">
+                                <p>康师傅红烧牛肉面康师傅红烧牛肉面</p>
+                                <span>￥49.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic08.jpg">
+                                <p>RIO锐澳鸡尾酒套装预调酒果酒洋酒经典275ml*24瓶整箱正品1517104正品</p>
+                                <span>￥399.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic05.jpg">
+                                <p>innisfree/悦诗风吟绿茶精萃保湿洁面乳</p>
+                                <span>￥299.00</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="goods.html">
+                                <img src="images/pic06.jpg">
+                                <p>化妆品收纳盒桌面抽屉式办公室文具文件架办公桌用品多功能置物架</p>
+                                <span>￥199.00</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="btn_link">
+                        <a href="category.html">更多体育器材></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            var swiper = new Swiper('.goods_box03', {
+                autoHeight: true, //enable auto height
+                pagination: '.my_page03',
+                paginationClickable: true,
+                paginationBulletRender: function (swiper, index, className) {
+                    switch (index) {
+                        case 0:
+                            name = '生活用品';
+                            break;
+                        case 1:
+                            name = '学习文具';
+                            break;
+                        case 2:
+                            name = '体育器材';
+                            break;
+                        default:
+                            name = '';
+                    }
+                    return '<a class="' + className + '">' + name + '</a>';
+                }
+            });
+        </script>
+    </div>
+
+
+    <!-- 猜你喜欢 -->
+    <div class="maybe_u_like">
+        <div class="index_title rel">
+            <h1>
+                <a>精选推荐</a>
+            </h1>
+            <i></i>
+        </div>
+        <ul>
+            <li>
+                <a href="goods.html">
+                    <i><img src="images/pic01.jpg"></i>
+                    <p>颜文明旗舰店Classical运动鞋男/女 男鞋头层牛皮休闲专业网球鞋</p>
+                    <span>￥199.00</span>
+                </a>
+            </li>
+            <li>
+                <a href="goods.html">
+                    <i><img src="images/pic02.jpg"></i>
+                    <p>日本进口食品丸京红豆铜锣烧310g蛋糕面包早餐网红零食品小吃动网球鞋</p>
+                    <span>￥299.00</span>
+                </a>
+            </li>
+            <li>
+                <a href="goods.html">
+                    <i><img src="images/pic03.jpg"></i>
+                    <p>康师傅红烧牛肉面康师傅红烧牛肉面</p>
+                    <span>￥5.00</span>
+                </a>
+            </li>
+            <li>
+                <a href="goods.html">
+                    <i><img src="images/pic04.jpg"></i>
+                    <p>千业吐司面包1Kg半切片三明治早餐蛋糕炼奶乳</p>
+                    <span>￥99.00</span>
+                </a>
+            </li>
+            <li>
+                <a href="goods.html">
+                    <i><img src="images/pic05.jpg"></i>
+                    <p>innisfree/悦诗风吟绿茶精萃保湿洁面乳</p>
+                    <span>￥199.00</span>
+                </a>
+            </li>
+            <li>
+                <a href="goods.html">
+                    <i><img src="images/pic06.jpg"></i>
+                    <p>化妆品收纳盒桌面抽屉式办公室文具文件架办公桌用品多功能置物架</p>
+                    <span>￥199.00</span>
+                </a>
+            </li>
+            <li>
+                <a href="goods.html">
+                    <i><img src="images/pic07.jpg"></i>
+                    <p>黑人牙膏超白茶家庭套装14支美白去黄去1517104正品</p>
+                    <span>￥99.00</span>
+                </a>
+            </li>
+            <li>
+                <a href="goods.html">
+                    <i><img src="images/pic08.jpg"></i>
+                    <p>RIO锐澳鸡尾酒套装预调酒果酒洋酒经典275ml*24瓶整箱正品1517104正品</p>
+                    <span>￥99.00</span>
+                </a>
+            </li>
+            <li>
+                <a href="goods.html">
+                    <i><img src="images/pic01.jpg"></i>
+                    <p>男式牛皮经典网球运动鞋时尚复古休闲鞋 1517104正品</p>
+                    <span>￥699.00</span>
+                </a>
+            </li>
+            <li>
+                <a href="goods.html">
+                    <i><img src="images/pic02.jpg"></i>
+                    <p>日本进口食品丸京红豆铜锣烧310g蛋糕面包早餐网红零食品小吃动网球鞋</p>
+                    <span>￥199.00</span>
+                </a>
+            </li>
+            <li>
+                <a href="goods.html">
+                    <i><img src="images/pic03.jpg"></i>
+                    <p>康师傅红烧牛肉面康师傅红烧牛肉面</p>
+                    <span>￥99.00</span>
+                </a>
+            </li>
+            <li>
+                <a href="goods.html">
+                    <i><img src="images/pic08.jpg"></i>
+                    <p>RIO锐澳鸡尾酒套装预调酒果酒洋酒经典275ml*24瓶整箱正品1517104正品</p>
+                    <span>￥399.00</span>
+                </a>
+            </li>
+        </ul>
+
+        <!-- 设置图片宽高相等，保持布局统一性 -->
+        <script type="text/javascript">
+            $(function () {
+                var w = $(".maybe_u_like ul li i").width()
+                $(".maybe_u_like ul li i").css("height", w)
+
+            })
+        </script>
+        <div class="zy_more">
+            <h2>加载更多···</h2>
+        </div>
+    </div>
+
+    <!-- 返回顶部 -->
+    <div class="go_top">
+        <a class="btn_top"></a>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            window.onscroll = function () {
+                var autoheight = document.body.scrollTop || document.documentElement.scrollTop;
+                if (autoheight > 100) {
+                    $(".go_top").fadeIn()
+                } else {
+                    $(".go_top").fadeOut()
+                }
+            }
+            $(".btn_top").mousedown(
+                function () {
+                    $("html, body").animate({"scroll-top": 0}, "fast");
+                }
+            )
+        })
+    </script>
+
+    <!-- 底部 -->
+    <div class="footer_box">
+        <div class="footer">
+            <h2>
+                <a href="login.html">登录</a><!--
+			 --><a href="register.html">注册</a><!--  
+			 --><a href="about_mdcx.html">门店查询</a>
+            </h2>
+            <h3>
+                <span><a href="about.html">关于我们</a></span>
+                <span><a href="about.html">购物指南</a></span>
+                <span><a href="about.html">支付方式</a></span>
+                <span><a href="about.html">售后服务</a></span>
+            </h3>
+            <div class="txt">
+                <p>Copyright © 2019 贵阳花溪盛千辉便利店</p>
+                <p>联系地址：贵州省贵阳市花溪区</p>
+                <p>全国服务热线:0851-8385-9148 &nbsp;&nbsp;&nbsp;技术支持：<a href="https://www.wangid.com" target="blank"
+                                                                   style="color: #999;">WangID驰通网络</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部导航 -->
+    <div class="foot_menu">
+        <ul>
+            <li class="cur">
+                <a href="index.html">
+                    <i><img src="images/menu_icon01_r.png"></i>
+                    <span>首 页</span>
+                </a>
+            </li>
+            <li>
+                <a href="catalog.html">
+                    <i><img src="images/menu_icon02.png"></i>
+                    <span>分 类</span>
+                </a>
+            </li>
+            <li class="gwc">
+                <a href="flow.html">
+                    <i><img src="images/menu_icon03.png"></i>
+                    <span>购物车</span>
+                    <em>3</em>
+                </a>
+            </li>
+            <li>
+                <a href="user.html">
+                    <i><img src="images/menu_icon04.png"></i>
+                    <span>我 的</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- 搜索框 -->
+<div class="search_bomb_box">
+    <div class="search_top fix">
+        <a><img src="images/back_jt.png"></a>
+        <div>
+            <form><!--
+				<select>
+					<option>商品</option>
+					<option>店铺</option>
+				</select>
+			 --><input type="text" name="" placeholder="零食"><!-- 
+			 -->
+                <button type="submit"><img src="images/icon_search.png"></button>
+            </form>
+        </div>
+    </div>
+    <div class="search_txt">
+        <h2>热门搜索</h2>
+        <ul>
+            <li><a href="category.html">雪花啤酒</a></li>
+            <li><a href="category.html">考试装用笔</a></li>
+            <li><a href="category.html">洗发水</a></li>
+            <li><a href="category.html">面包</a></li>
+            <li><a href="category.html">葡萄干</a></li>
+            <li><a href="category.html">饮料</a></li>
+            <li><a href="category.html">茶叶</a></li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+        $(".search-box").mousedown(
+            function () {
+                $(".search_bomb_box").show()
+                $(".module-layer").hide()
+                $(".module-content").hide()
+            }
+        )
+        $(".search_bomb_box .search_top>a").mousedown(
+            function () {
+                $(".search_bomb_box").hide()
+                $(".module-layer").show()
+                $(".module-content").show()
+            }
+        )
+    })
+</script>
+
+
+</body>
+</html>

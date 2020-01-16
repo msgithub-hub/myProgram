@@ -1,0 +1,45 @@
+*{padding:0px;margin:0px;font-family:"微软雅黑";font-size:100%; font-style:normal}
+dd,dl,dt,em,i,p,textarea,a,div{padding:0px;margin:0px;}
+a:link,a:visited{text-decoration:none;color:#fff}
+a:hover,a:active{text-decoration:none;color:#fff}
+img{border:0px;}
+ul,li{padding:0px;margin:0px;list-style:none;}
+.fl{ float:left}
+.fr{ float:right}
+
+
+/*游戏介面*/
+.gam_jiajw{width:640px; height:1008px; background:url(../images/gam_jm.jpg) no-repeat; margin:0px auto; position:relative}
+.jbpen{position:absolute; left:40px; bottom:132px;}
+
+.gma_jbjsqk{width:640px; height:132px;position:absolute; bottom:0px;}
+.gma_jbjsqk li{width:207px; float:left; height:40px; line-height:40px; padding-top:15px; }
+.gma_jbjsqk li b{color:#fff; font-size:24px;}
+.gma_jbjsqk li tt{background:#fff;font-size:24px; display:block; float:left; width:56px; height:37px; margin-top:0px; line-height:37px; text-align:right}
+.gma_jbjsqk li span{display:block; width:96px; float:left; padding-left:55px; font-size:24px;}
+
+.diajbqy{ width:640px; height:871px}
+
+
+.tim_dsq{width:116px; height:44px;position:absolute; right:0px;top:27px; background:url(../images/jjb_dsq.png) no-repeat; text-indent:40px; color:#fff; font-size:21px; line-height:35px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

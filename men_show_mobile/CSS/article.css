@@ -1,0 +1,147 @@
+html{
+    overflow-x: hidden;
+}
+.hate{
+    width:100%;
+    /*background: #ff2a18;*/
+    margin: 0 auto;
+    padding-bottom: 1vh;
+}
+.hate-center{
+    width:100%;
+    margin: 0 auto;
+    /*background: pink;*/
+    text-align: center;
+}
+.hate-center h2{
+    color: #261a4a;
+    width: 100%;
+    margin: 10px auto;
+    /*margin: 10px 480px;*/
+    font-size: 47px;
+}
+.hate-center h3{
+    color: #261a4a;
+    width: 100%;
+    margin: 10px auto;
+    /*margin: -7px 504px;*/
+    font-size: 22px;
+    font-weight:500 ;
+}
+.hate-sandian{
+    /*margin: 20px 545px;*/
+    margin: 8px auto;
+}
+.hate-biandxian{
+    width:90%;
+    height: 10rem;
+    margin: 1rem auto;
+    /*background-color: green;*/
+    /*position: relative;*/
+    /*top: 15px;*/
+    /*left:5%;*/
+}
+
+.hate-center .long-text{
+    color: #261a4a;
+    font-size: 3rem;
+    width:100%;
+    height: 4rem;
+    /*background-color: brown;*/
+    line-height: 4rem;
+    text-align: left;
+    /*position: absolute;*/
+    /*top:13px;*/
+    /*left: 50px;*/
+}
+.hate-bixian{
+    background: url('../images/pen_line_long.png') no-repeat center center;
+    width:100%;
+    height: 54px;
+    position: relative;
+    top:0;
+    left:-6%;
+}
+
+.hate-gangbi{
+    position: absolute;
+    top:-47%;
+    right:3%;
+}
+.leader{
+     color: darkgray;
+     font-size: 1.0rem;
+    margin-left: 1%;
+     /*position: absolute;*/
+     /*top:56px;*/
+     /*left: 54px;*/
+ }
+.leader-1{
+    color: darkgray;
+    font-size: 1.0rem;
+    /*position: absolute;*/
+    /*top:56px;*/
+    /*left: 220px;*/
+}
+.hate-box{
+    background: url('../自己网站素材/list/e.png') no-repeat;
+    margin: 70px auto;
+    width: 90%;
+    height:30rem;
+}
+.yuanxin{
+    width:73px;
+    height: 73px;
+    background:url('../images/article_iflike.png') no-repeat;
+    margin: 30px auto;
+}
+.yuanxin:hover{
+    background:url('../images/article_iflike.png') no-repeat 0px -73px;
+    transition: 0.1s;
+}
+.neirong-content{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+    text-align: justify;
+    -moz-text-align-last: right;
+    /*background-color: yellow;*/
+}
+
+/*//返回顶部*/
+#returnback{
+    height: 160px;
+    /*background: #ff2a18;*/
+    position: fixed;
+    right: 35px;
+    bottom: 20px;
+    display: none;
+    cursor: pointer;
+    z-index:10000;
+}
+.topjiantou{
+    width:50px;
+    height: 50px;
+    background: url('../images/scroll_top_bg.png') no-repeat;
+    position: absolute;
+    right: 15px;
+    top:0px;
+}
+.topjiantou:hover{
+    background: url('../images/scroll_top_bg.png') no-repeat 0px -50px;
+    transition: 0.3s;
+}
+.huifangxin{
+    width:87px;
+    height: 87px;
+    background: url('../images/fixed_contactus.png') top right no-repeat ;
+    position: absolute;
+    right: 0px;
+    top:74px;
+}
+.huifangxin:hover{
+    width:235px;
+    transition: 0.8s;
+}

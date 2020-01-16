@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html,body{
+				height: 100%;
+			}
+			.index{
+				height: 100%;
+				background: url(img/bg.jpg) no-repeat;
+				background-size: 100% 100%;
+			}
+			.logo{
+				height: 15.6vh;
+				display: flex;
+				padding: 0 7.4vw;
+				align-items: center;
+			}
+			.logo img{
+				width: 31.4666vw;
+			}
+			.title{
+				height: 20vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.title img{
+				width: 81.4666vw;
+			}
+			.start{
+				height: 12vh;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				z-index: 2;
+			}
+			.start img{
+				width: 44.8vw;
+				-webkit-tap-highlight-color: transparent;
+				cursor: pointer;
+			}
+			.bottom{
+				width: 100%;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+			.bottom img{
+				width: 100%;
+			}
+			.mask{
+	        	width: 100%;
+	        	height: 100%;
+	        	background: rgba(0,0,0,0.7);
+	        	position: fixed;
+	        	z-index: 999;
+	        	top: 0;
+	        	left: 0;
+	        }
+	        .end,.failure{
+	        	position: absolute;
+	        	width: 60vw;
+	        	top: 50%;
+	        	left: 50%;
+	        	transform: translate(-50%,-50%);
+	        	text-align: center;
+	        }
+	        .success{
+	        	position: absolute;
+	        	width: 67vw;
+	        	top: 50%;
+	        	left: 50%;
+	        	transform: translate(-50%,-50%);
+	        	text-align: center;
+	        }
+	        .mask .top{
+	        	width: 100%;
+	        	margin-bottom: 2vh;
+	        }
+	        .rankBtn,.again{
+	        	width: 54.4vw;
+	        }
+	        .go{
+	        	width: 63vw;
+	        	margin-top: 1vh;
+	        }
+	        .rule{
+	        	position: absolute;
+	        	width: 89vw;
+	        	top: 50%;
+	        	left: 50%;
+	        	transform: translate(-50%,-50%);
+	        	text-align: center;
+	        }
+	        .close{
+	        	width: 8vw;
+	        	height: 8vw;
+	        	display: block;
+	        	position: absolute;
+	        	right: 0%;
+	        	top: 3%;
+	        }
+		</style>
+	</head>
+	<body>
+		<div class="mask">
+			<div class="rule">
+				<span class="close"></span>
+				<img src="img/rule.png" class="top"/>
+			</div>
+		</div>
+		<div class="index">
+			<div class="logo">
+				<img src="img/logo.png"/>
+			</div>
+			<div class="title">
+				<img src="img/title.png"/>
+			</div>
+			<div class="start">
+				<img src="img/start.png"/>
+			</div>
+			<div class="bottom">
+				<img src="img/bottom.png"/>
+			</div>
+		</div>
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var is_end=false;
+			var is_jiang=true;
+			var is_first=true;
+			var is_join=true;
+			//判断互动是否已经结束
+			
+			if(is_end){
+				$('.mask').append('<div class="end"><img src="img/end.png" class="top"/><a href=""><img src="img/rankBtn.png" class="rankBtn"/></a></div>').show();
+				return false;
+			};
+			//判断是否已经参与
+			if(is_join){
+				$('.mask').empty().hide();
+			};
+			//判断互动是否中奖
+//			if(is_jiang){
+//				$('.mask').append('<div class="success"><img src="img/success.png" class="top"/><a href=""><img src="img/go.png" class="go"/></a></div>').show();
+//			}else{
+//				$('.mask').append('<div class="failure"><img src="img/failure.png" class="top"/><a href="ranking.html"><img src="img/rankBtn.png" class="rankBtn"/></a><a href="activity.html"><img src="img/again.png" class="again"/></a></div>').show();
+//			};
+            $('.close').click(function(){
+            	$('.mask').empty().hide();
+            });
+            $('.start img').click(function(){
+            	location.href='activity.html'
+            });
+		});
+	</script>
+</html>

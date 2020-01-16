@@ -1,0 +1,129 @@
+.tou{
+    width:100%;
+    height: 120px;
+    background: url('../自己网站素材/头和尾/塔.png') no-repeat center;
+}
+.tou li{
+    cursor: pointer;
+}
+.tou-con{
+    width: 100%;
+    height: 120px;
+    /*margin: 0 auto;*/
+    /*background: red;*/
+    display: flex;
+    align-items: center;
+}
+.tou .logo{
+    width:30%;
+    height: 110px;
+    /*float: left;*/
+    margin-left: 70px;
+    /*background: #ff3f5e;*/
+    display: flex;
+align-items: center;
+}
+.logo img{
+    /*margin: 14px 15px;*/
+    width: 100px;
+    /*height: 96px;*/
+    height: 100px;
+}
+.logo img:hover{
+    animation: swing 0.8s;
+}
+.qiqi{
+    color: white;
+    width:80%;
+    height: 100px;
+    margin-left: 2px;
+    /*background-color: yellow;*/
+    font-size: 1.2rem;
+}
+.fashion-man{
+    width: 100%;
+    height: 50%;
+    line-height: 50px;
+    text-align: left;
+    font-weight: 900;
+    font-family: kaiti;
+}
+.tou-title {
+    width: 47%;
+    /*background: blue;*/
+    margin-left: 13%;
+    display: flex
+    /*float: right;*/
+    /*margin-top: 47px;*/
+}
+.zizi{
+    width: 100%;
+    /*background-color: gold;*/
+}
+.tou-title .dd{
+    /*width: 15%;*/
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    /*margin-top: 3px;*/
+    color: white;
+    position: relative;
+    z-index:10000;
+    /*background-color: pink;*/
+    text-align: center;
+}
+.tou-title>li:hover{
+    background: url("../images/nav_now_bg.png") no-repeat bottom center;
+}
+.now{
+    background: url("../images/nav_now_bg.png") no-repeat bottom center;
+    /*margin-top: 1vh;*/
+}
+.tou-title li img{
+    width: 1.3rem;
+    height: auto;
+    /*float: left;*/
+    /*margin-top: -3px;*/
+}
+.ul-li{
+    width:123px;
+    /*background: black;*/
+    position: absolute;
+    top:22px;
+    left:-9px;
+    display: none;
+    z-index: 10000;
+}
+.ul-li1{
+    width:123px;
+    /*background: black;*/
+    position: absolute;
+    top:22px;
+    left:-15px;
+}
+.ul-li li{
+    width: 123px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    background: black;
+    margin-top: 2px;
+
+}
+.ul-li li:hover{
+    background: #526aff;
+    width:123px;
+    padding-left: 3px;
+}
+.ul-li li:hover .jiantou{
+    display: block;
+    top:0px;
+}
+.ul-li .jiantou{
+    display: inline-block;
+    position: absolute;
+    right: 2px;
+    display: none;
+}

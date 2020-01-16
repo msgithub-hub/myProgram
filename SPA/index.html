@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--定义编码格式-->
+    <meta charset="UTF-8">
+    <!--设置IE渲染方式默认为最高( 让它永远按最新的文档模型渲染）-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+    如果安装了这个chrome的插件，
+ 就可以让电脑里面的IE不管是哪个版本的都可以使用Webkit引擎及V8引擎进行排版及运算，无比给力，不过如果用户没装这个插件，那这段代码就会
+ 让IE以最高的文档模式展现效果。这段代码我还是建议你们用上，不过不用也是可以的。
+    <meta http-equiv="X-UA-Compatible" ;content="IE=edge, chrome=1">
+    -->
+    <!--
+   为了确保适当的绘制和触屏缩放，需要在<head>中添加viewport元数据标签
+    width=device-width     宽度等于设备宽度
+    initial-scale=1            初始显示大小——原始大小，即不进行缩放
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>index</title>
+    <!-- 解决IE8的 对媒体查询的兼容性-->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/move.js"></script>
+
+    <!--引入 谷歌的字体库-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+          rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic"
+          rel="stylesheet" type="text/css">
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div id="tou"></div>
+<div class="shenti-wrap">
+    <div class="container">
+        <!--第一行-->
+        <div class="row ">
+            <div class="col-lg-12  col-md-12  col-sm-12  col-xs-12  shengti-1">
+                <div class="col-lg-6  col-md-6  col-sm-12  col-xs-12">
+                    <img src="images/1.jpg" class="img-responsive">
+                </div>
+                <div class="shengti-1-text col-lg-6  col-md-6  col-sm-12  col-xs-12">
+                    <p><span
+                            style="color: #778d67;font-size: 24px"> Nisi Ut Aliquid Ex Ea Commodi Consequatur</span><br/><br/>
+                        <span style="display:block; color: #f0c8af;font-size: 21px; margin-top: -5px">MAGNAM ALIQUAM QUAERAT VOLUPTAEM QUIS</span><br/>Neque
+                        porro quisquan est,quil dolorem ipsum quia dolor sitamet,consectetur,adipisci velit,sed quia non
+                        numquam eius modi tempora incidunt ut labore etdolore maganam aliquamquaerat voluptatem quis
+                        autem vel eum lure reprehenderit quil in eavoluptate velit esse quamnihil molestiae consequatur.
+                    </p>
+                    <h4>Learn More</h4>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <!--第二行-->
+        <div class="row shengti-2">
+            <div class="col-lg-4   col-md-4  col-sm-12 col-xs-12 shengti-2-text">
+                <img src="images/i_2_a.png">
+                <p>
+                    <span>Magnam Aliquam Quaerat<br> Voluptatem Quis Dolorem</span><br>Neque porro quisquan
+                    est,reprehenderit qui in ea voluptate velit
+                    esse qui dolorem ipsum quia dolor sit amet,consecctetur,adipisci velit.
+                </p>
+                <h4>Learn More</h4>
+            </div>
+
+            <div class="col-lg-4   col-md-4  col-sm-12 col-xs-12 shengti-2-text">
+                <img src="images/i_3.jpg">
+                <p>
+                    <span>Magnam Aliquam Quaerat<br> Voluptatem Quis Dolorem</span><br>Neque porro quisquan
+                    est,reprehenderit qui in ea voluptate velit
+                    esse qui dolorem ipsum quia dolor sit amet,consecctetur,adipisci velit.
+                </p>
+                <h4>Learn More</h4>
+            </div>
+
+            <div class="col-lg-4   col-md-4  col-sm-12 col-xs-12 shengti-2-text">
+                <img src="images/i_1.jpg">
+                <p>
+                    <span>Magnam Aliquam Quaerat<br> Voluptatem Quis Dolorem</span><br>Neque porro quisquan
+                    est,reprehenderit qui in ea voluptate velit
+                    esse qui dolorem ipsum quia dolor sit amet,consecctetur,adipisci velit.
+                </p>
+                <h4>Learn More</h4>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+
+        <!--第三行-->
+        <div class="row shengti-3"><!--上面的轮播图-->
+            <div class="col-lg-12  col-md-12  col-sm-12  col-xs-12  zutu1 zutu ">
+                <div class="col-lg-7 col-md-12  col-sm-12  col-xs-12 zutu1-1 "></div>
+                <div class="col-lg-5 col-md-12  col-sm-12  col-xs-12  zutu1-2">
+                    <p><span
+                            style="color: white;font-size: 35px">Neque Porro Quisquam<br/>Est,Reprehenderit Qui</span><br/><br/><span
+                            style="color: #6e886f;font-size: 27px">VERITATIS ASI ARCHITECTO BEATAE ITAE DICTA SUNT EXPLICABO</span><br/>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium,totem rem aperiam, eaque ipsa quae ab illo inventore
+                        veritstis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,sed quia consequuntur
+                        magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-12  col-md-12  col-sm-12  col-xs-12  zutu2 zutu">
+                <div class="col-lg-7 col-md-12  col-sm-12  col-xs-12 zutu2-1"></div>
+                <div class="col-lg-5 col-md-12  col-sm-12  col-xs-12 zutu2-2">
+                    <p><span
+                            style="color: white;font-size: 35px">Neque Porro Quisquam<br/>Est,Reprehenderit Qui</span><br/><br/><span
+                            style="color: #6e886f;font-size: 27px">VERITATIS ASI ARCHITECTO BEATAE ITAE DICTA SUNT EXPLICABO</span><br/>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium,totem rem aperiam, eaque ipsa quae ab illo inventore
+                        veritstis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,sed quia consequuntur
+                        magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-12  col-md-12  col-sm-12  col-xs-12  zutu3 zutu">
+                <div class="col-lg-7 col-md-12  col-sm-12  col-xs-12 zutu3-1"></div>
+                <div class="col-lg-5 col-md-12  col-sm-12  col-xs-12 zutu3-2">
+                    <p><span
+                            style="color: white;font-size: 35px">Neque Porro Quisquam<br/>Est,Reprehenderit Qui</span><br/><br/><span
+                            style="color: #6e886f;font-size: 27px">VERITATIS ASI ARCHITECTO BEATAE ITAE DICTA SUNT EXPLICABO</span><br/>
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                        doloremque laudantium,totem rem aperiam, eaque ipsa quae ab illo inventore
+                        veritstis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                        ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,sed quia consequuntur
+                        magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+
+        <!--第四行-->
+        <div class="row shengti-4"><!--下面的轮播图-->
+            <div class="col-lg-12  col-md-12  col-sm-12  col-xs-12 lunbotu-xia1 lunbotu-xia">
+                <div class="col-lg-3 col-md-3 col-sm-12  col-xs-12 lunbotu1-xia01">
+                    <p>
+                        <spen style="color: white;font-size: 29px">Neque Porro Quisquam<br/>Est Qu Sed</spen>
+                        <br/><br/>Nemo enim ipsamipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                        fugit,sed
+                        quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6  col-sm-12  col-xs-12 lunbotu1-xia02"></div>
+                <div class="col-lg-3 col-md-3  col-sm-12  col-xs-12 lunbotu1-xia03">
+                    <h4>Learn More</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-12  col-md-12  col-sm-12  col-xs-12 lunbotu-xia2 lunbotu-xia">
+                <div class="col-lg-3 col-md-3  col-sm-12  col-xs-12  lunbotu2-xia01">
+                    <p>
+                        <span style="color: white;font-size: 29px">Neque Porro Quisquam<br/>Est Qu Sed</span>
+                        <br/><br/>Nemo enim ipsamipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                        fugit,sed
+                        quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6  col-sm-12  col-xs-12 lunbotu2-xia02"></div>
+                <div class="col-lg-3 col-md-3  col-sm-12  col-xs-12 lunbotu2-xia03">
+                    <h4>Learn More</h4>
+                </div>
+            </div>
+
+            <div class="col-lg-12  col-md-12  col-sm-12  col-xs-12 lunbotu-xia3 lunbotu-xia">
+                <div class="col-lg-3 col-md-3  col-sm-12  col-xs-12  lunbotu3-xia01">
+                    <p>
+                        <spen style="color: white;font-size: 29px">Neque Porro Quisquam<br/>Est Qu Sed</spen>
+                        <br/><br/>Nemo enim ipsamipsam voluptatem quia voluptas sit aspernatur aut odit aut
+                        fugit,sed
+                        quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-6  col-sm-12  col-xs-12 lunbotu3-xia02"></div>
+                <div class="col-lg-3 col-md-3  col-sm-12  col-xs-12 lunbotu3-xia03">
+                    <h4>Learn More</h4>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+
+        <!--第五行-->
+        <div class="row shengti-5"><!--圆点切换-->
+            <div class="col-lg-12  col-md-12  col-sm-12  col-xs-12">
+                <ul>
+                    <li class="show"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <!--<div class="clearfix"></div>-->
+    </div>
+</div>
+
+<!--第六行-->
+<div class="shengti-bottom">
+    <div class="container">
+
+        <div class="row shengti-6">
+            <div class="col-lg-5 col-md-5  col-sm-5  col-xs-12 shengti-6-left">
+                <h4>Keep In Touch</h4>
+                <p>We will give you last information about spa</p>
+            </div>
+
+            <div class="col-lg-7 col-md-7  col-sm-7  col-xs-12 shengti-6-right">
+                <input type="text" placeholder="Enter you e-mail">
+                <p style="width: 20%;float: left"> > </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="jiao"></div>
+</body>
+</html>

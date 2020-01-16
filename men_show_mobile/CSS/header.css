@@ -1,0 +1,100 @@
+.tou{
+    width:75%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+}
+.tou li{
+    cursor: pointer;
+}
+.tou-con{
+    width: 100%;
+    height: 100%;
+    /*margin: 0 auto;*/
+    /*background: pink;*/
+    /*display: flex;*/
+    /*align-items: center;*/
+}
+.tou .logo{
+    width:100%;
+    /*background-color: blue;*/
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    /*margin-top: 14px;*/
+    width: 30%;
+    /*height: 96px;*/
+    height: auto;
+}
+.qiqi{
+    color: white;
+    width:70%;
+    /*height: 100px;*/
+    /*margin-left: 2px;*/
+    /*background-color: yellow;*/
+    font-size: 1.2rem;
+}
+.fashion-man{
+    width: 100%;
+    height: 10vw;
+    line-height: 10vw;
+    text-align: center;
+    font-weight: 900;
+    /*background-color: #3b92ff;*/
+    font-size: 0.5rem;
+}
+.tou-title {
+    width: 100%;
+    /*background: blue;*/
+    margin-top: 5px;
+    padding-bottom: 1vh;
+}
+.zizi{
+    width: 100%;
+    /*background-color: gold;*/
+}
+.tou-title .dd{
+    width: 100%;
+    line-height: 15vw;
+    color: white;
+    position: relative;
+    /*z-index:10000;*/
+    /*background-color: pink;*/
+    text-align: center;
+    font-size: 1rem;
+}
+.tou-title li img{
+    width: 0.8rem;
+    height: auto;
+    /*float: left;*/
+    /*margin-top: -3px;*/
+}
+.ul-li{
+    width:100%;
+    /*background: yellow;*/
+    display: none;
+}
+.ul-li1{
+    width:123px;
+    /*background: black;*/
+    position: absolute;
+    top:22px;
+    left:-15px;
+}
+.ul-li li{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    background: black;
+    margin-top: 2px;
+
+}
+.ul-li .jiantou{
+    display: inline-block;
+    position: absolute;
+    right: 2px;
+    display: none;
+}

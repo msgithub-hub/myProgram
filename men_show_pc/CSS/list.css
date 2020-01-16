@@ -1,0 +1,171 @@
+.qugan1{
+    width:100%;
+    /*background: #ff2a18;*/
+    margin: 3vw auto;
+}
+.qugan1-center{
+    width:90%;
+    margin: 0 auto;
+    /*background-color: blue;*/
+    /*text-align: center;*/
+}
+.qugan1-center h2{
+    color: #261a4a;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    /*margin: 10px 480px;*/
+    font-size: 47px;
+}
+.qugan1-center h3{
+    color: #261a4a;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    /*margin: -7px 494px;*/
+    font-size: 22px;
+    font-weight:500 ;
+}
+.qugan1-sandian{
+    display: block;
+    margin: 10px auto;
+
+}
+.biandxian{
+    width:100%;
+    height: 70px;
+    /*background-color: yellow;*/
+    position: relative;
+    top: 15px;
+}
+.qugan1-center h4{
+    color: #261a4a;
+    font-size: 27px;
+    width:56px;
+    position: absolute;
+    top:13px;
+    left: 5%;
+}
+.bixian1{
+    background: url('../images/pen_line_long.png') no-repeat bottom;
+    width:100%;
+    height: 54px;
+    position: absolute;
+    top:0px;
+    /*left:5%;*/
+}
+.gangbi{
+    position: absolute;
+    width:50px;
+    height: 50px;
+    /*top:1px;*/
+    right:38px;
+}
+/*.qugan1-xia{*/
+    /*width:1130px;*/
+    /*float: left;*/
+    /*margin: 80px 24px;*/
+    /*!*background: red;*!*/
+/*}*/
+.qugan1-xia-all{
+    width: 43%;
+    height: 240px;
+    background: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    float: left;
+    margin-left:5%;
+    margin-top: 23px;
+    border: 1px solid white;
+}
+.qugan1-xia-all:hover{
+    border: 1px solid black;
+    animation: bounce 0.9s;
+}
+.qugan1-xia-all:hover .baijiantou-all{
+    left:40px;
+    transition: 0.5s;
+}
+.baijiantou-all{
+    position: absolute;
+    left:0px;
+    top:20px;
+}
+
+
+.qugan1-xia-img1{
+    width: 47%;
+    height: 200px;
+    /*float: left;*/
+    /*margin-top: 36px;*/
+    margin-left: 17px;
+    overflow: hidden;
+}
+.qugan1-xia-img1 img{
+    width: 100%;
+    height: 200px;
+}
+.san-ge-p{
+    width: 50%;
+    margin-left: 5px;
+    /*float: left;*/
+    /*margin-top: 46px;*/
+    text-align: left;
+    /*background-color: red;*/
+}
+.title_small{
+    font-size: 19px;
+}
+.neirong-wengzhang{
+    font-size: 18px;
+}
+
+
+
+.qugan1-xia-more{
+    width: 107px;
+    /*background-color: red;*/
+    margin:150px auto;
+
+}
+.gengduo-xia{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+/*//重回顶部*/
+#returnback{
+    height: 160px;
+    /*background: #ff2a18;*/
+    position: fixed;
+    right: 35px;
+    bottom: 20px;
+    display: none;
+    cursor: pointer;
+    z-index:10000;
+}
+.topjiantou{
+    width:50px;
+    height: 50px;
+    background: url('../images/scroll_top_bg.png') no-repeat;
+    position: absolute;
+    right: 15px;
+    top:0px;
+}
+.topjiantou:hover{
+    background: url('../images/scroll_top_bg.png') no-repeat 0px -50px;
+    transition: 0.3s;
+}
+.huifangxin{
+    width:87px;
+    height: 87px;
+    background: url('../images/fixed_contactus.png') top right no-repeat ;
+    position: absolute;
+    right: 0px;
+    top:74px;
+}
+.huifangxin:hover{
+    width:235px;
+    transition: 0.8s;
+}

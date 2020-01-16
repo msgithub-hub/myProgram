@@ -1,0 +1,111 @@
+.foot{
+    width:100%;
+    height: 348px;
+    background: url('../自己网站素材/头和尾/塔.png') no-repeat center ;
+    /*margin-top: -20px;*/
+}
+
+.foot-center{
+    width:90%;
+    height: 348px;
+    /*background: red;*/
+    /*position: relative;*/
+    margin: 0px auto;
+}
+.foot-center ul{
+    float: left;
+    width:100%;
+    margin-top: 10%;
+    /*background-color: blue;*/
+}
+.foot-center ul li{
+    float: left;
+    margin-left: 7vw;
+}
+.yi1{
+    float: left;
+    background: url("../images/yinyue_duo.png") no-repeat;
+    width:57px;
+    height: 57px;
+}
+.yi1:hover{
+    background: url("../images/yinyue_duo.png") no-repeat 0 -57px;
+    animation: flip 0.5s;
+}
+.er2{
+    float: left;
+    background: url("../images/yinyue_lai.png") no-repeat;
+    width:57px;
+    height: 57px;
+}
+.er2:hover{
+    background: url("../images/yinyue_lai.png") no-repeat 0 -57px;
+    animation: flip 0.5s;
+}
+.shan3{
+    float: left;
+    background: url("../images/yinyue_mi.png") no-repeat;
+    width:57px;
+    height: 57px;
+}
+.shan3:hover{
+    background: url("../images/yinyue_mi.png") no-repeat 0 -57px;
+    animation: flip 0.5s;
+}
+.si4{
+    float: left;
+    background: url("../images/yinyue_fa.png") no-repeat;
+    width:57px;
+    height: 57px;
+}
+.si4:hover{
+    background: url("../images/yinyue_fa.png") no-repeat 0 -57px;
+    animation: flip 0.5s;
+}
+.wu5{
+    float: left;
+    background: url("../images/yinyue_suo.png") no-repeat;
+    width:57px;
+    height: 57px;
+}
+.wu5:hover{
+    background: url("../images/yinyue_suo.png") no-repeat 0 -57px;
+    animation: flip 0.5s;
+}
+.liu6{
+    float: left;
+    background: url("../images/yinyue_la.png") no-repeat;
+    width:57px;
+    height: 57px;
+}
+.liu6:hover{
+    background: url("../images/yinyue_la.png") no-repeat 0 -57px;
+    animation: flip 0.5s;
+}
+.qi7{
+    float: left;
+    background: url("../images/yinyue_xi.png") no-repeat;
+    width:57px;
+    height: 57px;
+}
+.qi7:hover{
+    background: url("../images/yinyue_xi.png") no-repeat 0 -57px;
+    animation: flip 0.5s;
+}
+.foot-xuxian{
+    width: 100%;
+    border: 1px dashed #9890a2;
+    float: left;
+    margin-top: 2vw;
+}
+.foot-center p{
+    width: 100%;
+    text-align: center;
+    /*background-color: cadetblue;*/
+    color:white;
+    font-size: 25px;
+    font-weight: 900;
+    float: left;
+    margin-top: 2vw;
+    font-family: 楷体;
+}

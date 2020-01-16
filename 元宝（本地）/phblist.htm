@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+		<title></title>
+		<style type="text/css">
+			  * {
+				  margin: 0;
+				  padding: 0;
+				  -webkit-tap-highlight-color: transparent;
+			  }
+
+			html,
+			body {
+				height: 100%;
+				overflow: hidden;
+				margin:0 auto;
+			}
+
+			.ranking {
+				height: 100%;
+				background: #fff;
+			}
+
+			.top {
+				font-size: 0;
+			}
+
+			.top img {
+				width: 100%;
+				height: 37.8666vw;
+			}
+
+			.middle {
+				height: calc(100vh - 51.7332vw);
+			}
+
+			.middle ul {
+				height: 100%;
+				padding: 1vw 0;
+				margin:0;
+				overflow-y: auto;
+				overflow-x: hidden;
+				-webkit-overflow-scrolling: touch;
+				font-size:14px;
+			}
+
+			.middle ul li {
+				height: 13.8666vw;
+				padding: 0 2vw;
+				text-align: center;border-bottom:1px solid #EEE9E9;
+			}
+
+
+			.middle .transition .bk{
+				display:block;
+				float:left;
+				height: 13.8666vw;
+				display: flex;
+				align-items: center;
+			}
+
+			.middle .transition .avatar{
+				display:block;
+			}
+
+
+
+
+			.bottom {
+				height: 13.8666vw;
+				display: flex;
+				align-items: center;
+				padding: 0 4.4vw;
+				background: #e50150;
+				color: #FFFFFF;
+				font-size: 4vw;
+			}
+
+
+
+
+			.avatar {
+				width: 8.666vw;
+				height: 8.666vw;
+				border-radius: 50%;
+				margin: 0 2vw;
+			}
+
+			.nickName {
+				flex: 1;
+				padding-right: 2vw;
+			}
+
+			.time {
+				width: 20vw;
+				text-align: center;
+				line-height: 5vw;
+			}
+
+			.score {
+				text-align: center;
+				width: 20vw;
+			}
+
+			.rank img {
+				width: 5vw;
+			}
+
+			.middle .bgcolor {
+				background: #fff45c;
+			}
+
+			li {list-style-type:none;}
+		</style>
+	</head>
+
+	<body>
+		<div class="ranking">
+			<div class="top">
+				<img src="/static/shangyao/yuanxiao20190219/img/phb_top.jpg" />
+			</div>
+			<div class="middle">
+				<ul class="transition">
+					{volist name="phbList" id="vo"}
+					{if condition="$key+1 elt 50"}
+					<li class="bgcolor">
+						{else/}
+					<li>
+						{/if}
+						<span class="bk" style="width:15%;text-align:center;display:block;line-height:13.8666vw;">
+								{if condition="$key eq 0"}
+									<img style="height:40%;height: 13.8666vw;" src="/static/shangyao/yuanxiao20190219/img/rank1.png"/>
+								{elseif condition="$key eq 1"}
+									<img style="height:40%;height: 13.8666vw;" src="/static/shangyao/yuanxiao20190219/img/rank2.png"/>
+								{elseif condition="$key eq 2"}
+									<img style="height:40%;height: 13.8666vw;" src="/static/shangyao/yuanxiao20190219/img/rank3.png"/>
+								{else/}
+									{$key+1}
+								{/if}
+							</span>
+						<span class="bk" style="width:15%;"><img style="height:80%;border-radius:20px" src="{$vo.headimgurl}" /></span>
+						<span class="bk" style="width:35%;">{$vo.nickname}</span>
+						<span class="bk" style="width:15%;color:#00b775;">{$vo.up_all_score}</span>
+						<span class="bk" style="width:20%;font-size:12px;">
+								{$vo.update_time|date="m月d日 H:i:s",###}
+							</span>
+					</li>
+					{/volist}
+
+				</ul>
+			</div>
+			{if condition="$is_join eq 2"}
+			<div class="bottom">
+				<span class="rank">
+					{if condition="$myInfo.upcount eq 1"}
+							<img src="/static/shangyao/yuanxiao20190219/img/rank1.png"/>
+						{elseif condition="$myInfo.upcount eq 2"}
+							<img src="/static/shangyao/yuanxiao20190219/img/rank2.png"/>
+						{elseif condition="$myInfo.upcount eq 3"}
+							<img src="/static/shangyao/yuanxiao20190219/img/rank3.png"/>
+						{else/}
+							{$myInfo.upcount}
+					{/if}
+
+				</span>
+				<img src="{$myInfo.headimgurl}" class="avatar" />
+				<p class="nickName">{$myInfo.nickname}</p>
+				<p class="score">{$myInfo.up_all_score}分</p>
+				<p class="time">{$myInfo.update_time|date="m月d日 H:i:s",###}</p>
+			</div>
+			{/if}
+		</div>
+	</body>
+
+</html>

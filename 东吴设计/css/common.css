@@ -1,0 +1,64 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+img{
+    border:none 0;
+}
+body a:hover{
+    text-decoration:none;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left;
+}
+.clear{
+    clear: both;
+}
+ul,li{
+    list-style:none;
+}
+html,body{
+    background-color:white;
+    font-size: 100%;
+    /*font-family: 'Open Sans', sans-serif !important;*/
+    font-family: 隶书;
+}
+p{
+    margin: 0;
+}
+body{
+    font-family:"楷体",STKaiti, KaiTi_GB2312, "华文楷体", "宋体", Arial, Helvetica, sans-serif;
+    font-size:15px;
+    /*background:#f1f2f6;*/
+    /*overflow-x: hidden;*/
+}
+
+
+
+.pic{
+    width: 360px;
+    overflow: hidden;
+}
+.pic img{
+    width: 360px;
+    transition: 1s;
+
+}
+.hover:hover .pic img{
+    transform: scale(1.1);
+}
+.html{
+    overflow-x: hidden;
+
+}
+@media (max-width: 350px) {
+    .pic{
+        width: 100%;
+    }
+}
+
+

@@ -1,0 +1,322 @@
+.Learnmore-wrap{
+    width: 80%;
+    /*background: rgba(230, 195, 91, 0.76);*/
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.Learnmore-wrap h4{
+    color: green;
+    width: 500px;
+    font-size: 26px;
+}
+.Learnmore-row-left p{
+    color: #c7c8b8;
+    font-size: 15px;
+}
+.Learnmore-row-left h5{
+    color: #c7c8b8;
+    font-size: 15px;
+}
+.Learnmore-row-left-pic1{
+    background: url('../images/1.jpg')no-repeat center;
+    width: 100%;
+    height: 426px;
+    margin-top: 15px;
+}
+.left-four-biaoqian p{
+    margin-left: 4px;
+    color: #c7c8b8;
+}
+.left-four-biaoqian-down{
+    width:100%;
+    height: 210px;
+    border: 1px solid #c7c8b8;
+    margin-top: 30px;
+}
+.left-four-biaoqian-down h5{
+    color: green;
+    font-size: 18px;
+    margin: 30px 15px;
+}
+.left-four-biaoqian-down img{
+    margin: -15px 15px;
+}
+.left-four-biaoqian-down p{
+    margin: -53px 100px;
+    width:390px ;
+}
+.four-pic{
+    width: 100%;
+    height: 140px;
+    /*background: rgba(143, 49, 230, 0.76);*/
+}
+.four-pic-all{
+    float: left;
+    margin-left: 10px;
+}
+.four-pic .four-pic1{
+    background: url('../images/3.jpg')no-repeat center;
+    width:23%;
+    height: 100px;
+    border:1px solid  #c7c8b8;
+}
+.four-pic .four-pic2{
+    background: url('../images/4.jpg')no-repeat center;
+    width:23%;
+    height: 100px;
+    border:1px solid  #c7c8b8;
+}
+.four-pic .four-pic3{
+    background: url('../images/5.jpg')no-repeat center;
+    width:23%;
+    height: 100px;
+    border:1px solid  #c7c8b8;
+}
+.four-pic .four-pic4{
+    background: url('../images/6.jpg')no-repeat center;
+    width:23%;
+    height: 100px;
+    border:1px solid  #c7c8b8;
+}
+.Learnmore-row-left ul li{
+    float: left;
+    margin-left: 35px;
+    margin-top: 8px;
+}
+.three-wuming{
+    margin-top: 30px;
+}
+.three-wuming-all{
+    margin-top: 60px;
+}
+.three-wuming-all p{
+    width: 500px;
+    margin: -53px 81px;
+    font-size: 17px;
+}
+.three-wuming-all h5{
+    color: green;
+    margin-top: 65px;
+    font-size: 17px;
+}
+.three-wuming-all h6{
+    float: right;
+    margin: -27px -20px;
+}
+.Learnmore-row-left input{
+    width: 85%;
+    height: 50px;
+}
+.Learnmore-row-left textarea{
+    width: 105%;
+    height: 150px;
+}
+.Learnmore-row-left h1{
+    width: 105%;
+    height: 50px;
+    background: green;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 19px;
+}
+.Learnmore-row-left h1:hover{
+    color: #6CE676;
+    background: white;
+}
+.Learnmore-row-right-1 h4{
+    color: green;
+    width: 500px;
+    font-size: 26px;
+}
+.Learnmore-row-right-1 .input-kuang1{
+    width: 80%;
+    height: 50px;
+}
+.Learnmore-row-right-1 h3{
+    color: white;
+    width: 100px;
+    height: 50px;
+    background: rgba(79, 230, 13, 0.76);
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    float: right;
+    margin: -40px 111px;
+}
+.Learnmore-row-right-1 h3:hover{
+    color: #6CE676;
+    background: white;
+}
+
+.Learnmore-row-right-2{
+    margin-top: 40px;
+}
+.Learnmore-row-right-2 h3{
+    color: green;
+    font-size: 29px;
+}
+.Learnmore-row-right-2-1{
+    background: url('../images/11.jpg')no-repeat center;
+    width: 29%;
+    height: 175px;
+}
+.Learnmore-row-right-2 p{
+    float: right;
+    margin: -158px 125px;
+    color: #89b1d4;
+}
+.Learnmore-row-right-2 span{
+    color: #a1a081;
+}
+.Learnmore-row-right-2>h4{
+    color: white;
+    width: 100px;
+    height: 50px;
+    background: blue;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    float: right;
+    margin: -60px 274px;
+    font-size: 14px;
+}
+.Learnmore-row-right-2>h4:hover{
+    color:blue;
+    background: white;
+}
+
+
+.Learnmore-row-right-3{
+    margin-top: 40px;
+}
+.Learnmore-row-right-3 h3{
+    color: green;
+    font-size: 29px;
+}
+.Learnmore-row-right-3-1{
+    background: url('../images/12.jpg')no-repeat center;
+    width: 29%;
+    height: 175px;
+}
+.Learnmore-row-right-3 p{
+    float: right;
+    margin: -158px 125px;
+    color: #89b1d4;
+}
+.Learnmore-row-right-3 span{
+    color: #a1a081;
+}
+.Learnmore-row-right-3>h4{
+    color: white;
+    width: 100px;
+    height: 50px;
+    background: blue;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    float: right;
+    margin: -60px 274px;
+    font-size: 14px;
+}
+.Learnmore-row-right-3>h4:hover{
+    color: blue;
+    background: white;
+}
+
+
+.Learnmore-row-right-4{
+    margin-top: 40px;
+}
+.Learnmore-row-right-4 h3{
+    color: green;
+    font-size: 29px;
+}
+.Learnmore-row-right-4-1{
+    background: url('../images/13.jpg')no-repeat center;
+    width: 44%;
+    height: 220px;
+}
+.Learnmore-row-right-4 h5{
+    color: #4e5659;
+    font-size: 22px;
+    float: right;
+    margin: -160px 120px;
+}
+.Learnmore-row-right-4 h6{
+    color: green;
+    font-size: 22px;
+    float: right;
+    margin: -110px 211px;
+}
+.Learnmore-row-right-4 p{
+    width: 500px;
+    margin-top: 30px;
+    color: #a3a5d5;
+}
+
+
+
+
+.Learnmore-row-right-5{
+    margin-top: 40px;
+}
+.Learnmore-row-right-5 h3{
+    color: green;
+    font-size: 29px;
+}
+.Learnmore-row-right-5-1{
+    background: url('../images/14.jpg')no-repeat center;
+    width: 44%;
+    height: 220px;
+}
+.Learnmore-row-right-5 h5{
+    color: #4e5659;
+    font-size: 22px;
+    float: right;
+    margin: -160px 120px;
+}
+.Learnmore-row-right-5 h6{
+    color: green;
+    font-size: 22px;
+    float: right;
+    margin: -110px 211px;
+}
+.Learnmore-row-right-5 p{
+    width: 500px;
+    margin-top: 30px;
+    color: #a3a5d5;
+}
+
+
+
+
+.Learnmore-row-right-6{
+    margin-top: 40px;
+}
+.Learnmore-row-right-6 h3{
+    color: green;
+    font-size: 29px;
+}
+.Learnmore-row-right-6-1{
+    background: url('../images/15.jpg')no-repeat center;
+    width: 44%;
+    height: 220px;
+}
+.Learnmore-row-right-6 h5{
+    color: #4e5659;
+    font-size: 22px;
+    float: right;
+    margin: -160px 120px;
+}
+.Learnmore-row-right-6 h6{
+    color: green;
+    font-size: 22px;
+    float: right;
+    margin: -110px 211px;
+}
+.Learnmore-row-right-6 p{
+    width: 500px;
+    margin-top: 30px;
+    color: #a3a5d5;
+}

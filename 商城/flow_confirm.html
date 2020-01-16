@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="商城" http-equiv="keywords">
+<meta name="description" content="商城,购物">
+<meta name="format-detection" content="telephone=no"><!-- 禁止IPHONE识别手机号码 -->
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<title>贵阳花溪盛千辉便利店</title>
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+
+<!-- public_css -->
+<link rel="stylesheet" type="text/css" href="css/public/public_lib.css">
+
+<!-- zy_public_css -->
+<link rel="stylesheet" type="text/css" href="css/zy_public.css">
+<!-- zymain css -->
+<link rel="stylesheet" type="text/css" href="css/zy_main.css">
+
+<!-- js -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+
+<!-- js——public -->
+<script type="text/javascript" src="js/public.js"></script>
+
+</head>
+<body>
+<header class="zy_search_top_box">
+	<div class="zy_title_top fix">
+		<div class="one" href="javascript:" onclick="history.back();"><img src="images/back_jt.png"></div>
+		<h1>确认订单</h1>
+	</div>
+</header>	
+
+<!-- 内容框 -->
+<div class="zy_module-content">
+	<div class="zy_flow_confirm">
+		<form>
+			<div class="sh_dizhi">
+				<a href="flow_dizhi.html">
+					<i><img src="images/web/icon_position.png"></i>
+					<dl>
+						<dt>收货人：<span>买了个东西</span></dt>
+						<dd>收货地址：<span>贵州省贵阳市花溪区贵州大学男生5号宿舍608</span></dd>
+					</dl>
+					<b><img src="images/web/back_jt_w.png"></b>
+				</a>
+			</div>
+			<div class="box dingdxq">
+				<div class="zy_title_con_01">
+					<h2><span>订单详情<i></i></span></h2>
+				</div>
+				<div class="con">
+					<h2>盛千辉便利店</h2>
+					<h3>
+						<a href="goods.html">
+							<i><img src="images/pic01.jpg"></i>
+							<dl>
+								<dt>港式菠萝包冰火菠萝油面包早餐糕点汉堡胚供奶茶店茶餐厅100克/个</dt>
+								<dd><em>原味</em></dd>
+							</dl>
+						</a>
+						<p>
+							<span>￥445.00</span>
+							<em>X2</em>
+						</p>
+					</h3> 
+					<ul>
+						<li class="cur">
+							<a>千辉便利店配送</a>
+							<p>千辉便利店会在2个小时内送到您的手中...</p>
+						</li> 
+					</ul>
+
+					<script type="text/javascript">
+						$(function(){
+							$(".dingdxq ul li").click(
+								function(){
+									$(this).addClass("cur")
+									$(this).siblings().removeClass("cur")
+								}
+							)
+
+							$(".dingdxq .con>div p").mousedown(
+								function(){
+									$(".dingdxq .con>div h4").slideToggle()
+									if ($(this).find("em").hasClass("xz")) {
+										$(this).find("em").removeClass("xz")
+										$(this).find("em").addClass("xz01")
+									}else{
+										$(this).find("em").addClass("xz")
+										$(this).find("em").removeClass("xz01")
+									}
+								}
+							)
+						})
+					</script>
+				</div>
+			</div>
+			<div class="box other">
+				<div class="zy_title_con_01">
+					<h2><span>其他选项<i></i></span></h2>
+				</div>
+				<ul>
+					<li class="fapiao">
+						<div class="xiala">
+							<p>开发票和缺货处理<em><img src="images/web/jt_down_r.png"></em></p>
+							<h4> 
+								<a>
+									<span>缺货处理</span>
+									<label><input type="radio" name="quehuo" checked="checked">等待所有商品备齐后再发</label>
+									<label><input type="radio" name="quehuo">取消订单</label>
+									<label><input type="radio" name="quehuo">与店主协商</label>
+								</a>
+							</h4>
+						</div>
+					</li>
+					<li class="time">
+						<div class="xiala">
+							<p>送货时间<em><img src="images/web/jt_down_r.png"></em></p>
+							<h4>
+								<label><input type="radio" name="time" checked="checked"><a>送货时间不限</a></label>
+								<label><input type="radio" name="time"><a>只双休日/节假日送货（工作日不用送）</a></label>
+								<label><input type="radio" name="time"><a>只工作日（双休日/节假日不用送）</a></label>
+							</h4>
+						</div>
+					</li>
+					<li>
+						<div class="xiala">
+							<p>订单附言<em><img src="images/web/jt_down_r.png"></em></p>
+							<h4>
+								<textarea placeholder="请输入留言"></textarea>
+							</h4>
+						</div>
+					</li>
+				</ul>
+				<script type="text/javascript">
+					$(function(){
+							$(".zy_flow_confirm .other li>div p").mousedown(
+								function(){
+									$(this).siblings().slideToggle()
+									if ($(this).find("em").hasClass("xz")) {
+										$(this).find("em").removeClass("xz")
+										$(this).find("em").addClass("xz01")
+									}else{
+										$(this).find("em").addClass("xz")
+										$(this).find("em").removeClass("xz01")
+									}
+								}
+							)
+						})
+				</script>
+			</div>
+			<div class="box pay_type">
+				<div class="zy_title_con_01 xiala">
+					<h2><span>支付方式<i></i></span><a>（必选）<b>请选择支付方式</b></a> </h2>
+				</div>
+				<div class="con">
+					<label><input type="radio" name="pay"><img src="images/web/icon_wechat.png">微信支付</label> 
+				</div>
+			</div>
+			
+			<div class="box txt">
+				<p>该订单完成后，您将获得<a>250</a>积分以及价值<a>￥40.00</a>的红包</p> 
+			</div>
+			<div class="box total">
+				<h2>
+					<p>合计：<span>￥890.00</span></p>
+					<p>应付金额：<b>￥890.00</b></p>
+				</h2>
+				<button>提交订单</button>
+			</div>
+		</form>	
+
+	</div>
+	
+	
+	<!-- 底部 -->
+	<div class="footer_box">
+		<div class="footer">
+			<h2>
+				<a href="login.html">登录</a><!-- 
+			 --><a href="register.html">注册</a><!--  
+			 --><a href="about_mdcx.html">门店查询</a>
+			</h2>
+			<h3>
+				<span><a href="about.html">关于我们</a></span>
+				<span><a href="about.html">购物指南</a></span>
+				<span><a href="about.html">支付方式</a></span>
+				<span><a href="about.html">售后服务</a></span>
+			</h3>
+			<div class="txt">
+				<p>Copyright © 2019  贵阳花溪盛千辉便利店</p>
+				<p>联系地址：贵州省贵阳市花溪区</p>
+				<p>全国服务热线:0851-8385-9148 &nbsp;&nbsp;&nbsp;技术支持：<a href="https://www.wangid.com" target="blank" style="color: #999;">WangID驰通网络</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- 返回顶部 -->
+	<div class="go_top">
+		<a class="btn_top"></a>
+	</div>
+	<script type="text/javascript">
+        $(function(){
+			window.onscroll=function(){
+			var autoheight=document.body.scrollTop||document.documentElement.scrollTop;
+			if(autoheight>100){
+				$(".go_top").fadeIn()
+				}else{
+					$(".go_top").fadeOut()
+				}
+			}
+			$(".btn_top").mousedown(
+				function(){
+					$("html, body").animate({"scroll-top":0},"fast");
+				}
+			)
+		})
+    </script>
+
+	<!-- 底部导航 -->
+	<div class="foot_menu">
+		<ul>
+			<li>
+				<a href="index.html">
+					<i><img src="images/menu_icon01.png"></i>
+					<span>首 页</span>
+				</a>
+			</li>
+			<li>
+				<a href="catalog.html">
+					<i><img src="images/menu_icon02.png"></i>
+					<span>分 类</span>
+				</a>
+			</li>
+			<li class="gwc">
+				<a href="flow.html">
+					<i><img src="images/menu_icon03.png"></i>
+					<span>购物车</span>
+					<em>3</em>
+				</a>
+			</li>
+			<li>
+				<a href="user.html">
+					<i><img src="images/menu_icon04.png"></i>
+					<span>我 的</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+.about-wrap {
+    width: 100%;
+    /*background: rgba(139, 230, 131, 0.76);*/
+    margin-top: 20px;
+}
+
+.about-wrap-son {
+    width: 80%;
+    /*background: blueviolet;*/
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.row1-1 {
+    height: 435px;
+    background: url('../images/about_01.png') no-repeat center;
+    background-size: cover;
+}
+
+.row1-2 {
+    /*background: rgba(139, 230, 131, 0.76);*/
+    float: right;
+    width: 320px;
+    margin-top: 150px;
+}
+
+.row1-2 h3 {
+    font-size: 35px;
+    color: green;
+    margin: 10px 70px;
+}
+
+.row1-2 p {
+    color: lightgray;
+}
+
+.row2-1 {
+    background-size: cover;
+    height: 435px;
+    background: url('../images/about_02.png') no-repeat center;
+    /*float: right;*/
+}
+
+.row2-2 {
+    /*background: rgba(139, 230, 131, 0.76);*/
+    /*float: left;*/
+    width: 320px;
+    margin-top: 150px;
+}
+
+.row2-2 h3 {
+    font-size: 35px;
+    color: green;
+    margin: 10px 70px;
+}
+
+.row2-2 p {
+    color: lightgray;
+    margin-left: 56px;
+}
+
+.row3-1 {
+    background-size: cover;
+    height: 435px;
+    background: url('../images/about_03.png') no-repeat center;
+}
+
+.row3-2 {
+    /*background: rgba(139, 230, 131, 0.76);*/
+    float: right;
+    width: 320px;
+    margin-top: 150px;
+}
+
+.row3-2 h3 {
+    font-size: 35px;
+    color: green;
+    margin: 10px 70px;
+}
+
+.row3-2 p {
+    color: lightgray;
+}
+
+.row4-1 {
+    background-size: cover;
+    height: 435px;
+    background: url('../images/about_02.png') no-repeat center;
+    /*float: right;*/
+}
+
+.row4-2 {
+    /*background: rgba(139, 230, 131, 0.76);*/
+    /*float: left;*/
+    width: 320px;
+    margin-top: 150px;
+}
+
+.row4-2 h3 {
+    font-size: 35px;
+    color: green;
+    margin: 10px 70px;
+}
+
+.row4-2 p {
+    color: lightgray;
+    margin-left: 56px;
+}
+
+.row5-1 {
+    background-size: cover;
+    height: 435px;
+    background: url('../images/about_05.png') no-repeat center;
+}
+
+.row5-2 {
+    /*background: rgba(139, 230, 131, 0.76);*/
+    float: right;
+    width: 320px;
+    margin-top: 150px;
+}
+
+.row5-2 h3 {
+    font-size: 35px;
+    color: green;
+    margin: 10px 70px;
+}
+
+.row5-2 p {
+    color: lightgray;
+}

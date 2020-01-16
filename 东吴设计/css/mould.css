@@ -1,0 +1,202 @@
+body,html{
+    overflow-x:hidden ;
+
+}
+#header{
+    height: 60px;
+    background: #f9f9f9;
+    width: 100%;
+}
+
+
+
+.list_wrap{
+    width: 100%;
+    background: #f9f9f9;
+    border-bottom:1px solid silver ;
+    padding-bottom: 70px;
+}
+.list_list{
+    margin-left: 30px;
+    margin-top: 80px;
+}
+.list_list li{
+    float: left;
+    width: 110px;
+    height: 35px;
+    color: black;
+    font-size:1.1em ;
+    margin-left: 10px;
+    line-height: 35px;
+
+}
+.list_list .list_hover{
+    background: #494949;
+    color: white;
+
+}
+.list_list li:hover{
+    background: #494949;
+    color: white;
+}
+.list_box{
+    height: 450px;
+}
+.list_box1{
+    height: 450px;
+}
+.list_box2{
+    height: 450px;
+}
+.list-content{
+    padding-top: 50px;
+    width: 100%;
+    background: #f9f9f9;
+    /*height: 1000px;*/
+    /*overflow: hidden;*/
+
+}
+.mould1{
+    display: none;
+}
+.mould2{
+    display: none;
+}
+.mould3{
+    display: none;
+}
+.listmargin{
+    margin-top: 70px;
+}
+.box_word{
+    height: 100px;
+    background: white;
+    color: #b7b7b7;
+
+}
+.fadeIn0{
+    opacity: 0;
+    margin-top: 90px;
+}
+.fadeIn1{
+    opacity: 0;
+    margin-top: 90px;
+}
+.fadeIn2{
+    opacity: 0;
+    margin-top: 90px;
+}
+.fadeIn3{
+    opacity: 0;
+    margin-top: 90px;
+}
+.fadeIn4{
+    opacity: 0;
+    margin-top: 90px;
+}
+.fadeIn5{
+    opacity: 0;
+    margin-top: 90px;
+}
+.fadeIn6{
+    opacity: 0;
+    margin-top: 90px;
+}
+.fadeIn7{
+    opacity: 0;
+    margin-top: 90px;
+}
+.fadeIn8{
+    opacity: 0;
+    margin-top: 90px;
+}
+.fadeIn10{
+    opacity: 0;
+    margin-top: 90px;
+}
+.fadeIn11{
+    opacity: 0;
+    margin-top: 90px;
+}
+.fadeIn12{
+    opacity: 0;
+    margin-top: 90px;
+}
+.fadeIn20{
+    opacity: 0;
+    margin-top: 90px;
+}
+
+.fadeIn21{
+    opacity: 0;
+    margin-top: 90px;
+}
+.fadeIn22{
+    opacity: 0;
+    margin-top: 90px;
+}
+.fadeIn30{
+    opacity: 0;
+    margin-top: 90px;
+}
+.mouldxiala{
+    margin-top: 50px;
+
+}
+.xialakuang{
+    background: black;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+}
+.xialakuang1{
+    background: black;
+    height: 30px;
+    line-height: 30px;
+    color: white;
+    margin-top: 1px;
+}
+.mouldxiala1{
+    margin-top: 50px;
+    display: none;
+}
+.mouldxiala2{
+    margin-top: 10px;
+    display: none;
+}
+.display{
+    display: none ;
+}
+
+
+
+
+
+
+
+
+
+.hover:hover h4{
+    color: #828282;
+}
+
+
+.block{
+    display:block;
+}
+@media (max-width: 1200px) {
+    .mouldlist{
+        display: none;
+    }
+}
+@media (min-width: 1200px) {
+    .mouldxiala{
+        display: none !important;
+    }
+    .mouldxiala2{
+        display: none !important;
+    }
+    .mouldxiala1{
+        display: none!important;
+    }
+}

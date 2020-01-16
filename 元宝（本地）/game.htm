@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <title></title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+    <link href="css/msjbp.css" rel="stylesheet"/>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .activity {
+            height: 100%;
+            background: url("img/main_bg.jpg") no-repeat;
+            background-size: 100% 100%;
+            position: relative;
+        }
+
+        .top {
+            width: 100%;
+            height: 20vh;
+            /*background: red;*/
+            padding: 0 10vw;
+            display: flex;
+            align-items: center;
+            font-weight: 600;
+            color: #000000;
+            position: absolute;
+            box-sizing: border-box;
+            z-index: 2;
+        }
+
+        .top .left {
+            display: flex;
+            align-items: center;
+            flex: 1;
+            font-size: 0;
+        }
+
+        .top .left p {
+            font-size: 18px;
+            color: #da374a;
+        }
+
+        .top .right p {
+            padding: 0 2vw;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+
+        .avatar {
+            width: 16.666vw;
+            height: 16.666vw;
+            border-radius: 50%;
+            margin-right: 4.8vw;
+        }
+
+        .middle {
+            width: 80vw;
+            height: 80vh;
+            position: relative;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .listBg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .listBg li {
+            float: left;
+            display: flex;
+            height: 23vh;
+            align-items: center;
+        }
+
+        .listBg li:nth-child(2n) {
+            float: right;
+            margin-left: 10vw;
+        }
+
+        .listBg li img {
+            width: 25vw;
+            height: 25vw;
+        }
+
+        .all {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            overflow: hidden;
+        }
+
+        .all li {
+            width: 25vw;
+            height: 25vw;
+            position: absolute;
+            z-index: 1;
+            left: calc(50% - 12.5vw);
+            top: -25vw;
+        }
+
+        .all li img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .fadeIn {
+            -webkit-animation: fadeIn .1s linear infinite;
+            animation: fadeIn .1s linear infinite;
+        }
+
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .bg > span {
+            z-index: 999;
+            position: absolute;
+            font-size: 18px;
+            left: 0;
+            top: 0;
+        }
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 999;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+        }
+
+        .result {
+            width: 60vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .result > img {
+            width: 100%;
+        }
+
+        .content {
+            position: absolute;
+            width: 100%;
+            height: 56%;
+            top: 44%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .result-title {
+            font-size: 7.2vw;
+            color: #6d241e;
+            font-weight: 600;
+            letter-spacing: 2px;
+            padding-left: 2px;
+        }
+
+        .result-score {
+            font-size: 16px;
+            letter-spacing: 2px;
+            padding-left: 2px;
+            color: #FFFFFF;
+            height: 26%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content img {
+            width: 35vw;
+            cursor: pointer;
+        }
+
+        .content div {
+            font-size: 0;
+            height: 27%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .coutDown {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 50px;
+            color: #E42D4C;
+            font-weight: 600;
+            font-style: italic;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .coutDown span {
+            font-size: 100px;
+            font-style: italic;
+            font-family: "copperplate gothic bold";
+        }
+
+        .coutDown .small {
+            transform: scale(1);
+            opacity: 1;
+            transition: all .8s ease-out;
+        }
+
+        .jia {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 2;
+        }
+
+        .jia span {
+            display: block;
+            width: 10vw;
+            position: absolute;
+            text-align: center;
+            color: green;
+        }
+
+        #canvas {
+            position: relative;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+
+<audio id="goAudio" src="music/goAudio.mp3" style="display: none;"></audio>
+<audio id="boomAudio" src="music/boomAudio.mp3" style="display: none;"></audio>
+<!--<div>-->
+<div class="coutDown">
+    <span>4</span>
+</div>
+
+<!--主页面-->
+<div class="activity">
+    <div class="top">
+        <div class="left">
+            <img src="img/1.png" class="avatar"/>
+            <p class="score" score="0">0分</p>
+        </div>
+        <div class="right">
+            <p>倒计时：20s</p>
+        </div>
+    </div>
+    <canvas id="canvas"></canvas>
+    <div class="jia"></div>
+</div>
+
+<!--得多少分的模态框-->
+<div class="mask">
+    <div class="result">
+        <div class="content">
+            <p class="result-score">本次得分:0</p>
+            <div class="rankBtn">
+                <img src="img/phb_btn.png"/>
+            </div>
+            <div class="again">
+                <img src="img/again.png"/>
+            </div>
+        </div>
+        <img src="img/resultBg.png"/>
+    </div>
+</div>
+
+
+
+
+<!--</div>-->
+<script type="text/javascript">
+    //下落速度
+    var speed = 3;
+</script>
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.bootcss.com/layer/2.3/layer.js"></script>
+
+<script type="text/javascript" src="/static/libs/jquery/better-scroll/bscroll.min.js"></script>
+<script src="js/money.js"></script>
+<script src="js/wan.js"></script>
+<script src="js/body.js"></script>
+<script>
+    let canvas = document.getElementById('canvas');
+    canvas.width = $('body').width();
+    canvas.height = $('body').height();
+    let context = canvas.getContext('2d');
+    let canvasWidth = $('body').width();
+    let canvasHeight = $('body').height();
+    let wanWidth = $('body').width() / 100 * 24.933;
+    let wanHeight = $('body').width() / 100 * 18.133;
+    let wanY = $('body').height() - wanHeight;
+    let score = 0;
+    let timer = null;
+    let time1 = 4;
+    let isEnd = false; //游戏结束
+    let body;
+    // let up_socre_end = {$up_socre_end};
+    let goAudio = document.getElementById("goAudio");
+    let boomAudio = document.getElementById("boomAudio");
+
+    // 游戏结束清除所有定时器
+    function animate(timer) {
+        body.clear();
+        body.draw();
+        if (!isEnd) {
+            clearInterval(timer);
+        }
+    }
+
+    $(function () {
+        body = new Body();
+        timedCount1();
+
+        // 实例化音效
+        audioAutoPlayPlan('goAudio');
+        audioAutoPlayPlan('boomAudio');
+
+        let scroll = new BScroll('body', {
+            scrollY: false, click: true
+        });
+
+        // 点击按钮再来玩一把
+        $('.again').click(function () {
+            //再次体验
+            location.reload();
+        });
+
+        // 查看排行榜
+        $('.rankBtn').click(function () {
+            //看排行榜
+            location.href = "/shangyao/yuanxiao20190219/phblist"
+        });
+    });
+
+
+    let time = 20;
+    let clock;
+
+    // 游戏结束，提交ajax成绩
+    function timedCount() {
+        if (time <= 0) {
+            clearTimeout(clock);
+            this.isEnd = true;
+            // setTimeout(function() {
+            // 	$('.result-score').text('本次得分：' + $('.score').text());
+            // 	$('.mask').show();
+            // }, 3000);
+            var all_score = parseInt($('.score').text());
+            if (up_socre_end == 1) {
+                // 传送成绩数据
+                $.ajax({
+                    // url: '/shangyao/yuanxiao20190219/addajax',
+                    url: '/shangyao/yuanxiao20190219/addajax',
+                    type: 'post',
+                    data: {'all_score': all_score},
+                    dataType: 'json',
+                    success: function (res) {
+                        if (res.status == 200) {
+                            $('.result-score').text('本次得分：' + all_score);
+                            $('.mask').show();
+                        } else if (res.status == 500) {
+                            layer.msg('网络出错，成绩提交失败！', {
+                                icon: 2,
+                                time: 2000
+                            });
+                        }
+                    },
+                    error: function (xhr, textStatus) {
+                        layer.msg('系统出错，请稍后重试,谢谢!', {
+                            icon: 2,
+                            time: 2000
+                        });
+                    }
+                })
+            } else {
+                $('.result-score').text('本次得分：' + all_score);
+                $('.mask').show();
+            }
+        } else {
+            time--;
+            $(".right p").html("倒计时：" + time + "s");
+            clock = setTimeout("timedCount()", 1000);
+        }
+    };
+
+    // 页面4秒钟游戏开始倒计时
+    function timedCount1() {
+        if (time1 > 0) {
+            if (time1 == 2) {
+                // ready go
+                goAudio.play();
+            }
+            time1--;
+            $('.coutDown span').text(time1);
+            clock = setTimeout("timedCount1()", 1000);
+        } else {
+            clearTimeout(clock);
+            var ci = 0;
+            $('.coutDown').hide();
+            timedCount();
+            timer = setInterval(function () {
+                if (ci % 30 === 0) {
+                    body.addMoney()
+                }
+                ;
+                ci++;
+                animate();
+            }, 1000 / 60);
+        }
+    }
+
+    // 有关于音乐播放的
+
+    function audioAutoPlayPlan(id) {
+        var audio = document.getElementById(id),
+            play = function () {
+                audio.play();
+                audio.pause();
+                //document.removeEventListener("touchstart", play, false);
+            };
+        //audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            play();
+        }, false);
+    }
+</script>
+</body>
+
+</html>

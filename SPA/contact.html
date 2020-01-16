@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--定义编码格式-->
+    <meta charset="UTF-8">
+    <!--设置IE渲染方式默认为最高( 让它永远按最新的文档模型渲染）-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+    如果安装了这个chrome的插件，
+ 就可以让电脑里面的IE不管是哪个版本的都可以使用Webkit引擎及V8引擎进行排版及运算，无比给力，不过如果用户没装这个插件，那这段代码就会
+ 让IE以最高的文档模式展现效果。这段代码我还是建议你们用上，不过不用也是可以的。
+    <meta http-equiv="X-UA-Compatible" ;content="IE=edge, chrome=1">
+    -->
+    <!--
+   为了确保适当的绘制和触屏缩放，需要在<head>中添加viewport元数据标签
+    width=device-width     宽度等于设备宽度
+    initial-scale=1            初始显示大小——原始大小，即不进行缩放
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>contact</title>
+    <!-- 解决IE8的 对媒体查询的兼容性-->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/move.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
+
+
+    <!--引入 谷歌的字体库-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+          rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic"
+          rel="stylesheet" type="text/css">
+    <link href="css/contact.css" rel="stylesheet" type="text/css">
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div id="tou" style="width: 100%;height: 800px"></div>
+<div class="contact-wrap">
+    <div class="container contact-wrap-son">
+        <h2>Contact Us</h2>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  " id="contact-wrap-son1-ditu"></div>
+        </div>
+        <!--<div class="clearfix"></div>-->
+
+
+
+
+
+
+
+        <div class="row contact-wrap-son2">
+            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12  contact-wrap-son2-zuo">
+                <h3>Address</h3>
+                <p>Eiusmod Tempor inc<br/><br/>9560 St Dolore Place<br/><br/>Telephone:+1 800 603 6035<br/><br/>FAX:+1
+                    800 889 9898 </p>
+
+            </div>
+            <div class="col-lg-7 col-md-7 col-sm-5 col-xs-12  contact-wrap-son2-you">
+                <h3>Contact Form</h3>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="E-mail">
+                <input type="text" placeholder="Telephone">
+                <textarea>Message</textarea>
+                <h4>Submit</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="jiao" style="width: 100%;height: 307px"></div>
+</body>
+</html>

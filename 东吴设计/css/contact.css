@@ -1,0 +1,54 @@
+#header01{
+    width: 100%;
+    height: 60px;
+
+}
+.headers{
+    height: 60px;
+}
+#contant-wrap-son-ditu{
+    width: 100%;
+    height: 400px;
+}
+.contact_bottom{
+    margin: 100px 0;
+}
+
+.ft_left li{
+    font-size: 15px;
+    line-height: 40px;
+}
+/*.ft_right .text{*/
+/*height: 50px;*/
+/*line-height: 40px;*/
+/*}*/
+.ft_right li input {
+    width: 49.7%;
+    height: 40px;
+    margin: 1em 0 0;
+}
+.ft_right li textarea{
+    width: 100%;
+    height: 100px;
+    margin-top: 1em;
+}
+.ft_right li button{
+    width: 15%;
+    height: 30px;
+    margin-top: 1em ;
+    background: rgb(120,120,120);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    border: 0;
+    outline: none;
+}
+.ft_font{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.ft_font1{
+    color: rgb(153,153,153);
+}
+

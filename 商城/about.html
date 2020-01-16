@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="商城" http-equiv="keywords">
+<meta name="description" content="商城,购物">
+<meta name="format-detection" content="telephone=no"><!-- 禁止IPHONE识别手机号码 -->
+<meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1">
+<title>贵阳花溪盛千辉便利店</title>
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+
+<!-- public_css -->
+<link rel="stylesheet" type="text/css" href="css/public/public_lib.css">
+
+<!-- zy_public_css -->
+<link rel="stylesheet" type="text/css" href="css/zy_public.css">
+<!-- 分类、品牌、店铺css -->
+<link rel="stylesheet" type="text/css" href="css/news_login_apply.css">
+
+<!-- js -->
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+
+<!-- js——public -->
+<script type="text/javascript" src="js/public.js"></script>
+
+</head>
+<body>
+<header class="zy_search_top_box">
+	<div class="zy_title_top fix">
+		<div class="one" href="javascript:" onclick="history.back();"><img src="images/back_jt.png"></div>
+		<h1>关于我们</h1>
+	</div>
+</header>	
+
+<!-- 内容框 -->
+<div class="zy_module-content bgwh">
+	<div class="zy_about_nav bgwh">
+		<ul>
+			<li><a href="about_mdcx.html">公司简介</a></li>
+			<li><a href="about_mdcx.html">门店查询</a></li>
+			<li><a href="about_mdcx.html">联系我们</a></li>
+		</ul>
+	</div>
+	
+	<!-- 底部 -->
+	<div class="footer_box">
+		<div class="footer">
+			<h2>
+				<a href="login.html">登录</a><!-- 
+			 --><a href="register.html">注册</a><!--  
+			 --><a href="about_mdcx.html">门店查询</a>
+			</h2>
+			<h3>
+				<span><a href="about.html">关于我们</a></span>
+				<span><a href="about.html">购物指南</a></span>
+				<span><a href="about.html">支付方式</a></span>
+				<span><a href="about.html">售后服务</a></span>
+			</h3>
+			<div class="txt">
+				<p>Copyright © 2019  贵阳花溪盛千辉便利店</p>
+				<p>联系地址：贵州省贵阳市花溪区</p>
+				<p>全国服务热线:0851-8385-9148 &nbsp;&nbsp;&nbsp;技术支持：<a href="https://www.wangid.com" target="blank" style="color: #999;">WangID驰通网络</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- 返回顶部 -->
+	<div class="go_top">
+		<a class="btn_top"></a>
+	</div>
+	<script type="text/javascript">
+        $(function(){
+			window.onscroll=function(){
+			var autoheight=document.body.scrollTop||document.documentElement.scrollTop;
+			if(autoheight>100){
+				$(".go_top").fadeIn()
+				}else{
+					$(".go_top").fadeOut()
+				}
+			}
+			$(".btn_top").mousedown(
+				function(){
+					$("html, body").animate({"scroll-top":0},"fast");
+				}
+			)
+		})
+    </script>
+
+	<!-- 底部导航 -->
+	<div class="foot_menu">
+		<ul>
+			<li>
+				<a href="index.html">
+					<i><img src="images/menu_icon01.png"></i>
+					<span>首 页</span>
+				</a>
+			</li>
+			<li>
+				<a href="catalog.html">
+					<i><img src="images/menu_icon02.png"></i>
+					<span>分 类</span>
+				</a>
+			</li>
+			<li class="gwc">
+				<a href="flow.html">
+					<i><img src="images/menu_icon03.png"></i>
+					<span>购物车</span>
+					<em>3</em>
+				</a>
+			</li>
+			<li>
+				<a href="user.html">
+					<i><img src="images/menu_icon04.png"></i>
+					<span>我 的</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+	
+</div>
+
+
+</body>
+</html>

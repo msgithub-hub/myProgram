@@ -1,0 +1,23 @@
+.article{
+    width: 100%;
+    /*background: #f9f9f9;*/
+    /*padding: 0 0 20px;*/
+}
+.article_content{
+    width: 100%;
+    background: #f9f9f9;
+    padding: 0 0 60px;
+}
+.article_word{
+padding-left: 50px!important;
+}
+.article_word{
+    font-size: 18px;
+    color: dimgray;
+}
+
+@media (max-width: 992px) {
+    .article_word{
+        padding-left: 15px!important;
+    }
+}

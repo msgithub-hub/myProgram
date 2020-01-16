@@ -1,0 +1,342 @@
+.shenti-wrap{
+    width:100%;
+    /*background: rgba(174, 230, 145, 0.76);*/
+    margin-top: 20px;
+}
+/*.shengti-1-text{*/
+    /*width:490px;*/
+    /*background: rgba(230, 191, 144, 0.76);*/
+    /*float: left;*/
+    /*margin: -420px 665px;*/
+/*}*/
+.shengti-1-text p{
+    color: #a2a2a2;
+    font-size: 19px;
+}
+.shengti-1-text h4{
+    width: 135px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 21px;
+    background: #739d49;
+    color: white;
+    margin-top: 43px;
+}
+.shengti-1-text h4:hover{
+    color: #6CE676;
+    background: white;
+}
+.shengti-2{
+    margin-top: 80px;
+}
+.shengti-2-text{
+    float: left;
+    border-bottom:1px solid #e0e0e0;
+    border-right:1px solid #e0e0e0 ;
+}
+.shengti-2-text img{
+    width:100%;
+}
+.shengti-2-text p{
+    width:370px;
+    color: #d4d4d2;
+    font-size: 19px;
+}
+.shengti-2-text p span{
+    width:370px;
+    color: #694b63;
+    font-size: 24px;
+}
+.shengti-2-text h4{
+    width: 135px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 21px;
+    background: #739d49;
+    color: white;
+    margin-top: 30px;
+}
+.shengti-2-text h4:hover{
+    color: #6CE676;
+    background: white;
+}
+
+.shengti-3{
+    margin-top: 80px;
+    position: relative;
+}
+.zutu{
+    display: none;
+    position: absolute;
+}
+.zutu1{
+
+    display: block;
+}
+
+.zutu1-1{
+    background: url('../images/xn_banner/11.jpg')no-repeat center;
+    width: 58%;
+    height: 434px;
+    /*padding: 0;*/
+    /*margin: 0;*/
+
+}
+.zutu1-2{
+    background: url('../images/xn_banner/12.png')no-repeat center;
+    /*width: 42%;*/
+    height: 434px;
+    /*padding:0 ;*/
+    /*margin: 0;*/
+}
+.zutu1-2 p{
+    color: white;
+    margin-left: 21px;
+}
+.zutu2-1{
+    background: url('../images/6.jpg')no-repeat ;
+    background-size: 100% 100%;
+    /*width: 58%;*/
+    height: 434px;
+    /*padding: 0;*/
+    /*margin: 0;*/
+
+}
+.zutu2-2{
+    background: url('../images/7.jpg')no-repeat ;
+    /*width: 42%;*/
+    height: 434px;
+    background-size: 100% 100%;
+    /*padding:0 ;*/
+    /*margin: 0;*/
+}
+.zutu2-2 p{
+    color: white;
+    margin-left: 21px;
+}
+.zutu3-1{
+    background: url('../images/xn_banner/31.jpg')no-repeat center;
+    /*width: 58%;*/
+    height: 434px;
+    /*padding: 0;*/
+    /*margin: 0;*/
+
+}
+.zutu3-2{
+    background: url('../images/xn_banner/32.png')no-repeat center;
+    /*width: 42%;*/
+    height: 434px;
+    /*padding:0 ;*/
+    /*margin: 0;*/
+}
+.zutu3-2 p{
+    color: white;
+    margin-left: 21px;
+}
+.lunbotu1-xia01{
+    background: url('../images/xn_banner/13.png') no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 303px;
+}
+.lunbotu1-xia02{
+    background: url('../images/xn_banner/14.png')no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 303px;
+}
+.lunbotu1-xia03{
+    background: url('../images/xn_banner/15.png')no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 303px;
+    position: relative;
+}
+
+.shengti-4{
+    float: left;
+    /*margin-top: 20px;*/
+    margin-top: 450px;
+}
+.lunbotu1-xia01 p{
+    color: white;
+    margin-left: 21px;
+}
+.lunbotu1-xia03 h4{
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 21px;
+    background: #739d49;
+    color: white;
+    /*margin: 130px  90px;*/
+    position: absolute;
+    top:130px;
+    left: 90px;
+}
+.lunbotu1-xia03 h4:hover{
+    color: #6CE676;
+    background: white;
+}
+.lunbotu-xia1{
+    display: block;
+}
+
+.lunbotu2-xia01{
+    background: url('../images/8.jpg') no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 303px;
+}
+.lunbotu2-xia02{
+    background: url('../images/9.jpg')no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 303px;
+}
+.lunbotu2-xia03{
+    background: url('../images/10.jpg')no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 303px;
+    position: relative;
+}
+.lunbotu2-xia01 p{
+    color: white;
+    margin-left: 21px;
+}
+.lunbotu2-xia03 h4{
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 21px;
+    background: #739d49;
+    color: white;
+    /*margin: 130px  90px;*/
+    position: absolute;
+    top:130px;
+    left: 90px;
+}
+.lunbotu2-xia03 h4:hover{
+    color: #6CE676;
+    background: white;
+}
+/*.lunbotu-xia3{*/
+    /*margin-top: 30px;*/
+/*}*/
+
+.lunbotu3-xia01{
+    background: url('../images/xn_banner/33.png') no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 303px;
+}
+.lunbotu3-xia02{
+    background: url('../images/xn_banner/34.png')no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 303px;
+}
+.lunbotu3-xia03{
+    background: url('../images/xn_banner/35.png')no-repeat;
+    background-size: cover;
+    width: 30%;
+    height: 303px;
+    position: relative;
+}
+.lunbotu3-xia01 p{
+    color: white;
+    margin-left: 21px;
+}
+.lunbotu3-xia03 h4{
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 21px;
+    background: #739d49;
+    color: white;
+    /*margin: 130px  90px;*/
+    position: absolute;
+    top:130px;
+    left: 90px;
+}
+.lunbotu3-xia03 h4:hover{
+    color: #6CE676;
+    background: white;
+}
+.lunbotu-xia{
+    display: none;
+}
+.lunbotu-xia1{
+    display: block;
+}
+
+.shengti-5 ul{
+    width:120px;
+    height: 20px;
+    /*background: red;*/
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.shengti-5 ul li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: green;
+    float: left;
+    margin-left: 15px;
+}
+.shengti-5 ul .show{
+    background: darkgray;
+}
+.shengti-bottom{
+    margin-top: 50px;
+    background: #e6e6e6;
+    width: 100%;
+    padding-bottom: 50px;
+}
+.shengti-6-left, .shengti-6-right{
+    margin-top: 70px;
+}
+.shengti-6-left h4{
+    color: #819d60;
+    font-size: 40px;
+}
+.shengti-6-left p{
+    font-size: 20px;
+}
+.shengti-6-right{
+    margin-top: 87px;
+}
+.shengti-6-right input{
+    width: 60%;
+    height: 50px;
+    float: left;
+}
+.shengti-6-right p{
+    background: green;
+    width: 20%;
+    height: 50px;
+    /*margin: -50px 494px;*/
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    float: left;
+    font-size: 48px;
+}
+.shengti-6-right p:hover{
+    color: #6CE676;
+    background: white;
+}
+
+@media (max-width: 768px) {
+    .shengti-6-right{
+        margin-top: 0;
+    }
+
+}

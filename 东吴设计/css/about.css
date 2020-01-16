@@ -1,0 +1,109 @@
+.headers{
+    height: 60px;
+}
+
+
+#header01{
+     width: 100%;
+     height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+ }
+#about{
+    width: 100% !important;
+    background:whitesmoke;
+}
+
+
+.about-wrap{
+    width:100%;
+    /*background:#f1f2f6;*/
+    /*margin-top: 20px;*/
+}
+.about-wrap-row1{
+    width: 100%;
+    /*background: blue;*/
+    text-align: center;
+}
+.about-wrap-row1 h3{
+    font-size: 40px;
+}
+.about-wrap-row1 h4{
+    font-size: 13px;
+    color: lightgray;
+}
+
+/*第二行*/
+.about-wrap-row2{
+    width: 100%;
+    border: 1px solid darkgrey;
+    margin-top: 40px;
+
+}
+
+/*第三行*/
+.about-wrap-3{
+    margin-top: 30px;
+}
+.about-wrap-3-img img{
+    width: 90%;
+    /*float: left;*/
+    /*margin-left: 70px;*/
+}
+.about-wrap-3-text{
+    /*width: 55%;*/
+    /*float: right;*/
+    /*margin-right: 58px;*/
+}
+.about-wrap-3-text p{
+    color: grey;
+    font-size: 16px;
+}
+
+/*第四行*/
+.about-wrap-4{
+    margin-top: 90px;
+    margin-left: 17px;
+}
+.about-wrap-4-son{
+    width: 100%;
+}
+.about-wrap-4-son ul li{
+    overflow: hidden;
+    height: 132px;
+    border-radius: 10px;
+}
+.about-wrap-4-son ul li img{
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+}
+.about-wrap-4-son ul li img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+/*第五行*/
+.about-wrap-5{
+    margin-top: 30px;
+    margin-left: 17px;
+    margin-bottom: 30px;
+}
+.about-wrap-5-son{
+    width: 100%;
+}
+.about-wrap-5-son ul li{
+    overflow: hidden;
+    height: 132px;
+    border-radius: 10px;
+}
+.about-wrap-5-son ul li img{
+    width: 100%;
+    height: 130px;
+    border-radius: 10px;
+}
+.about-wrap-5-son ul li img:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}

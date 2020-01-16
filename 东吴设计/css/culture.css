@@ -1,0 +1,68 @@
+.culture{
+    padding-bottom: 60px;
+    background-color: whitesmoke;
+}
+.culture_title{
+    width: 160px;
+    border-bottom: 3px solid #ffcd14;
+    padding-top: 50px;
+    margin-left: 43%;
+    position: relative;
+    z-index: 10;
+}
+
+#header01{
+    width: 100%;
+    height: 60px;
+
+}
+
+
+
+.hr{
+    position: absolute;
+    width: 80%;
+    top: 13%;
+
+}
+.culture_list li{
+    font-size: 1em;
+    /*font-weight: bold;*/
+    color: #ff9416;
+    margin-top: 20px;
+}
+.culture_list1 li{
+    margin-top: 20px;
+    font-size: 1em;
+    /*font-weight: bold;*/
+}
+.culture_logo img{
+    width: 100%;;
+    height: 200px;
+
+}
+.culture_logo{
+    position: relative;
+}
+.mengban{
+    width: 88.5%;
+    position: absolute;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.55);
+    bottom: 0;
+    left: 6%;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+.mengban1{
+    width: 89%;
+    position: absolute;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.55);
+    bottom: 0;
+    left: 5.5%;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}

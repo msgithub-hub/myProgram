@@ -1,0 +1,20 @@
+/*公共*/
+html,body{
+    background: #fff;
+    font-size: 100%;
+    font-family: 'Open Sans',sans-serif !important;
+}
+img{
+    border:none 0;
+}
+body a:hover{
+    text-decoration: none;
+}
+p{
+    margin: 0;
+}
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}

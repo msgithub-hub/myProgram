@@ -1,0 +1,91 @@
+.foot{
+    width:100%;
+    height: 50vw;
+    background: url('../image/头和尾/塔.png') no-repeat center ;
+}
+
+.foot-center{
+    width:90%;
+    height: 50vw;
+    /*background: red;*/
+    margin: 0px auto;
+}
+.foot-center ul{
+    width:100%;
+    /*background-color: blue;*/
+}
+.foot-center ul li{
+    float: left;
+    width:57px;
+    height: 57px;
+    margin-left: 2vw;
+    margin-top: 2vw;
+}
+.yi1{
+    background: url("../images/yinyue_duo.png") no-repeat;
+}
+.yi1:hover{
+    background: url("../images/yinyue_duo.png") no-repeat 0 -57px;
+    animation: flip 0.5s;
+}
+.er2{
+    background: url("../images/yinyue_lai.png") no-repeat;
+}
+.er2:hover{
+    background: url("../images/yinyue_lai.png") no-repeat 0 -57px;
+    animation: flip 0.5s;
+}
+.shan3{
+    background: url("../images/yinyue_mi.png") no-repeat;
+}
+.shan3:hover{
+    background: url("../images/yinyue_mi.png") no-repeat 0 -57px;
+    animation: flip 0.5s;
+}
+.si4{
+    background: url("../images/yinyue_fa.png") no-repeat;
+}
+.si4:hover{
+    background: url("../images/yinyue_fa.png") no-repeat 0 -57px;
+    animation: flip 0.5s;
+}
+.wu5{
+    background: url("../images/yinyue_suo.png") no-repeat;
+
+}
+.wu5:hover{
+    background: url("../images/yinyue_suo.png") no-repeat 0 -57px;
+    animation: flip 0.5s;
+}
+.liu6{
+    background: url("../images/yinyue_la.png") no-repeat;
+}
+.liu6:hover{
+    background: url("../images/yinyue_la.png") no-repeat 0 -57px;
+    animation: flip 0.5s;
+}
+.qi7{
+    background: url("../images/yinyue_xi.png") no-repeat;
+
+}
+.qi7:hover{
+    background: url("../images/yinyue_xi.png") no-repeat 0 -57px;
+    animation: flip 0.5s;
+}
+.foot-xuxian{
+    width: 100%;
+    border: 1px dashed #9890a2;
+    float: left;
+    margin-top: 2vw;
+}
+.foot-center p{
+    width: 100%;
+    text-align: center;
+    /*background-color: cadetblue;*/
+    color:white;
+    font-size: 16px;
+    font-weight: 900;
+    float: left;
+    margin-top: 2vw;
+    /*font-family: 楷体;*/
+}

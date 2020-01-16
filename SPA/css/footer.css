@@ -1,0 +1,124 @@
+.footer-wrap{
+    background-color: #242424;
+    padding-bottom: 50px;
+
+}
+.footer-wrap-son{
+    /*width: 84%;*/
+    /*!*background: red;*!*/
+    /*height: 330px;*/
+}
+.footer1, .footer2, .footer3, .footer4{
+    margin-top: 55px;
+}
+.footer-all{
+    float: left;
+}
+.footer-h4{
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: 1.4em;
+    margin-bottom: .5em;
+    color: #fff;
+}
+.footer-ul{
+    margin-top: 18px;
+}
+.footer-ul li{
+    /*margin-top: 15px;*/
+    display: block;
+    padding: 5px 0;
+    color: #848484;
+    font-size: 14px;
+}
+.footer-ul li:hover{
+    color: #fff;
+}
+.footer4{
+    width: 360px;
+
+    margin-top: 66px;
+}
+.footer4 h4{
+    color: white;
+    font-size:13px;
+}
+.footer4 h4 span{
+    color: white;
+    font-size:30px;
+}
+.footer4 p{
+    color: #848484;
+    font-size:13px;
+}
+.footer4 p:hover{
+    color: white;
+}
+.footer4 ul{
+    width:140px;
+    height: 53px;
+}
+.footer4 ul li{
+    float: left;
+    margin-left: 7px;
+    width: 35px;
+    height: 45px;
+}
+.footer-tub1{
+    background: url('../images/icon-tb.png')no-repeat;
+    width: 35px;
+    height: 45px;
+}
+.footer-tub1:hover{
+    background: url('../images/icon-tb.png')no-repeat 0px -44px;
+    transition: 0.5s;
+}
+.footer-tub2{
+    background: url('../images/icon-tb.png')no-repeat -43px 0px;
+    width: 35px;
+    height: 45px;
+}
+.footer-tub2:hover{
+    background: url('../images/icon-tb.png')no-repeat -42px -44px;
+    transition: 0.5s;
+}
+.footer-tub3{
+    background: url('../images/icon-tb.png')no-repeat -83px 0px;
+    width: 35px;
+    height: 45px;
+}
+.footer-tub3:hover{
+    background: url('../images/icon-tb.png')no-repeat -83px -44px;
+    transition: 0.5s;
+}
+/*//缩小屏幕的时候*/
+@media (max-width:1200px) {
+    .footer-wrap-son{
+         width: 100%;
+         height: 100%;
+     }
+    .footer-all{
+        width: 25%;
+    }
+}
+@media (max-width: 1000px) {
+    .footer-all{
+        width: 50%;
+    }
+    .footer-warp{
+        width: 100%;
+        height: 100%;
+        padding-bottom:30px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-all{
+        width: 100%;
+    }
+    .footer-warp{
+        width: 100%;
+        height: 100%;
+        padding-bottom:30px;
+    }
+}
